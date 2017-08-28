@@ -1,0 +1,1 @@
+title @s actionbar ["",{"text":"PROVA SETTIMANALE","bold":true,"color":"green"},{"text":": Uccidi i "},{"text":"Creeper","color":"green"},{"text":"! "},{"score":{"name":"@s","objective":"ProvaSett1"}}]

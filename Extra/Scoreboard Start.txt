@@ -1,0 +1,27 @@
+gamerule commandBlockOutput false
+gamerule logAdminCommands false
+gamerule doDaylightCycle false
+time set 6000
+gamerule doWeatherCycle false
+gamerule doEntityDrops false
+gamerule doFireTick false
+gamerule doMobLoot false
+gamerule doMobSpawning false
+gamerule doTileDrops false
+gamerule keepInventory true
+gamerule mobGriefing false
+gamerule spawnRadius 0
+gamerule spectatorsGenerateChunks false
+spreadplayers 0 0 0 1 false @p
+tp @p 0 ~ 0
+execute @p setworldspawn
+scoreboard objectives add Morti deathCount
+scoreboard objectives setdisplay sidebar Morti
+scoreboard objectives add Cuori health
+scoreboard objectives setdisplay list Cuori
+scoreboard objectives setdisplay belowName Cuori
+scoreboard players add @a Morti 0
+scoreboard players add @a Cuori 0
+scoreboard teams add Nome
+scoreboard teams join Nome @a
+scoreboard teams option Nome color red

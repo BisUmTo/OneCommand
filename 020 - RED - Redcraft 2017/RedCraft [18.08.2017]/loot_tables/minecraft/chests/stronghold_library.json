@@ -1,0 +1,119 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 10
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ],
+                    "weight": 20
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 7
+                            }
+                        }
+                    ],
+                    "weight": 20
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:compass",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:book",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 30,
+                            "treasure": true
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:skull",
+                    "weight": 250,
+					"functions": [
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{LocName:\"Player Head\"},SkullOwner:{Id:\"d46798ef-edd2-4b75-95fc-c1760972a079\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNiMDk4OTY3MzQwZGFhYzUyOTI5M2MyNGUwNDkxMDUwOWIyMDhlN2I5NDU2M2MzZWYzMWRlYzdiMzc1MCJ9fX0=\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:skull",
+                    "weight": 250,
+					"functions": [
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{LocName:\"Player Head\"},SkullOwner:{Id:\"9f093fb6-bcd7-4c0a-aff0-79260f8bbc0c\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWI3YWY5ZTQ0MTEyMTdjN2RlOWM2MGFjYmQzYzNmZDY1MTk3ODMzMzJhMWIzYmM1NmZiZmNlOTA3MjFlZjM1In19fQ==\"}]}}}"
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "minecraft:skull",
+                    "weight": 1,
+					"functions": [
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{LocName:\"ERROR\"},SkullOwner:{Id:\"d0b15454-36fa-43e4-a247-f882bb9fe288\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThiN2NhM2M3ZDMxNGE2MWFiZWQ4ZmMxOGQ3OTdmYzMwYjZlZmM4NDQ1NDI1YzRlMjUwOTk3ZTUyZTZjYiJ9fX0=\"}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 500
+                }
+            ]
+        }
+    ]
+}

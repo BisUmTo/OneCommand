@@ -1,0 +1,2 @@
+Armorstand blocco in mano -> Pose:{RightArm:[-15f,-45f,0f]}
+Armorstand item in mano -> Pose:{RightArm:[-90f,0f,0f]}

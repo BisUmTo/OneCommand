@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:shulker_shell",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+	{		
+			"conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.02,
+                    "looting_multiplier": 0.01
+                }
+			],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:skull",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        },
+						{
+                            "function": "set_nbt",
+                            "tag": "{display:{LocName:\"Shulker Skull\"},SkullOwner:{Id:\"ddc61ddc-2658-4973-8f55-600bf660a46e\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhmYjk2YmY0YTlhMzFiMjU1MzhiNzEyMTdkYThiNjM0ZThjMDVkNGMzNWE2YWI4N2FjYjM3ZjkzYTZmMmMifX19\"}]}}}"
+                        }
+                    ]
+                }
+            ]
+        }
+  ]
+}

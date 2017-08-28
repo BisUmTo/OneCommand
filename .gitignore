@@ -1,0 +1,5 @@
+/appdata/*
+!/appdata/saves/
+
+##MCEDIT.TEMP*##/
+*.dat_old

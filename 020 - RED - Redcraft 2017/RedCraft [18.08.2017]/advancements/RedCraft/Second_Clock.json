@@ -1,0 +1,10 @@
+ {
+	"criteria": {
+        "run": {
+            "trigger": "minecraft:location"
+        }
+    },
+	"rewards": {
+		"function": "redcraft:game_time/add_second"
+	}
+}

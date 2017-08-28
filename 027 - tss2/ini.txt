@@ -1,0 +1,6 @@
+JUMP BOOST LV 9
+/entitydata @e[type=item_frame,c=1] {Invulnerable:1b,ItemDropChange:0.0f}
+/entitydata @e[type=painting,c=1] {Invulnerable:1}
+/entitydata @e[type=chest_minecart,c=1] {Invulnerable:1,CustomName:"§f§oFind The Sign"}
+
+/summon minecart ~ ~-2 ~ {NoGravity:1b,CustomDisplayTile:1b,Invulnerable:1b,DisplayOffset:70,DisplayTile:"minecraft:magma",Tags:["026mn1"]}

@@ -1,0 +1,6 @@
+scoreboard objectives add 004WBR achievement.openInventory
+scoreboard objectives add 004MWD achievement.mineWood
+scoreboard objectives add 004WAC stat.walkOneCm
+scoreboard objectives add 004CRT dummy
+scoreboard objectives add 004POM stat.playOneMinute
+summon falling_block ~ ~100 ~ {Block:command_block,Data:1,TileEntityData:{Command:Insert the second command},Time:1,DropItem:0}

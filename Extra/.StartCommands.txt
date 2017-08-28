@@ -1,0 +1,34 @@
+summon falling_block ~ ~1 ~ {
+ id:"falling_block",
+ Block:"minecraft:redstone_block",
+ Time:1,
+ Passengers:[
+  {
+   id:"falling_block",
+   Block:"minecraft:activator_rail",
+   Time:1,
+   Passengers:[
+    {id:"commandblock_minecart",Command:"gamerule commandBlockOutput false"},
+    {id:"commandblock_minecart",Command:"gamerule doDaylightCycle false"},    {id:"commandblock_minecart",Command:"gamerule doWeatherCycle false"},
+	{id:"commandblock_minecart",Command:"time set 6000"},
+    {id:"commandblock_minecart",Command:"gamerule doEntityDrops false"},
+    {id:"commandblock_minecart",Command:"gamerule doFireTick false"},
+    {id:"commandblock_minecart",Command:"gamerule doMobLoot false"},
+    {id:"commandblock_minecart",Command:"gamerule doMobSpawning false"},
+    {id:"commandblock_minecart",Command:"gamerule doTileDrops false"},
+    {id:"commandblock_minecart",Command:"gamerule keepInventory true"},
+    {id:"commandblock_minecart",Command:"gamerule logAdminCommands false"},
+    {id:"commandblock_minecart",Command:"gamerule mobGriefing false"},
+    {id:"commandblock_minecart",Command:"gamerule spawnRadius 0"},
+    {id:"commandblock_minecart",Command:"gamerule spectatorsGenerateChunks false"},
+    {id:"commandblock_minecart",Command:"spreadplayers 0 0 0 1 false @p"},
+    {id:"commandblock_minecart",Command:"tp @p 0 ~ 0"},
+    {id:"commandblock_minecart",Command:"execute @p ~ ~ ~ setworldspawn"},
+    {id:"commandblock_minecart",Command:"execute @p ~ ~ ~ setblock ~ ~-1 ~ minecraft:sand"},
+    {id:"commandblock_minecart",Command:"execute @p ~ ~ ~ setblock ~ ~-1 ~1 minecraft:sandstone_stairs 6"},
+    {id:"commandblock_minecart",Command:"setblock ~ ~1 ~ minecraft:command_block 0 replace {auto:1b,Command:\"fill ~ ~-3 ~ ~ ~ ~ minecraft:air\"}"},
+    {id:"commandblock_minecart",Command:"kill @e[type=commandblock_minecart,r=0]"}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+scoreboard objectives add 012ITM dummy
+scoreboard objectives add 012STT dummy
+scoreboard objectives add 012PWP dummy

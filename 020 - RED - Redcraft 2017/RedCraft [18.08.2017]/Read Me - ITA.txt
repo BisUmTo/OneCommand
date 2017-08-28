@@ -1,0 +1,21 @@
+              •• RedCraft 2017 ••
+			  • Powered by BisUmTo •
+         • http://youtube.com/BisUmTo •
+
+      • Come installare questa Function •
+Per avviare la presente funzione copiare le cartelle "functions", "advancements" e "loot_table" di questo .zip in "saves/WORLD/data". 
+Entrare in game e fare i seguenti comandi:
+/reload
+/gamerule commandBlockOutput false
+/gamerule gameLoopFunction redcraft:index
+
+Nella console del gioco apparirà un messaggio al secondo per ogni player.
+Per rimmuovere questo spam fare il comando:
+/gamerule logAdminCommands false
+
+			 • Cartelli utili •
+BENVENUTO
+/give @p minecraft:sign 1 0 {BlockEntityTag:{Text1:"[{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute @p ~ ~ ~ function redcraft:entry/welcome\"}},{\"text\":\"Red\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"Craft\",\"bold\":true,\"color\":\"red\"}]",Text2:"",Text3:"{\"text\":\"Benvenuto!\",\"bold\":true}"},display:{Name:"RedCraft - Benvenuto"}}
+
+SIDEBAR ON/OFF
+/give @p minecraft:sign 1 0 {BlockEntityTag:{Text1:"[{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players set @p sidebar 0\"}},{\"text\":\"Red\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"Craft\",\"bold\":true,\"color\":\"red\"}]",Text2:"",Text3:"{\"text\":\"Mostra/Nascondi\"}",Text4:"{\"text\":\"la sidebar.\"}"},display:{Name:"RedCraft - Sidebar"}}

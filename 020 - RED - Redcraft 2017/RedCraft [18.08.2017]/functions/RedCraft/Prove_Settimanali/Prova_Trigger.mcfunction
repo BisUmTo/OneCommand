@@ -1,0 +1,1 @@
+function redcraft:prove_settimanali/compass_hover

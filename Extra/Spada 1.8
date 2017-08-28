@@ -1,0 +1,33 @@
+/summon item ~ ~1 ~-3 
+{Item:
+	{id:"minecraft:wooden_sword",Count:1,
+		tag:{
+			display:{Name:"1.8 Diamond Sword",
+				Lore:["Questa spada è equivalente ad una", "spada di diamante della 1.8"]
+			},
+			AttributeModifiers:[
+				{Slot:"mainhand",
+				AttributeName:"generic.attackDamage",
+				Name:"Danno",
+				Amount:7,
+				Operation:0,
+  				UUIDLeast:1,
+				UUIDMost:1},
+				
+   				{Slot:"mainhand",
+				AttributeName:"generic.attackSpeed",
+				Name:"Velocità di attacco",
+				Amount:1000,
+				Operation:0,
+  				UUIDLeast:1,
+				UUIDMost:1}
+			],
+			ench: [
+				{id:34,
+				lvl:10}
+			],
+			HideFlags:7,
+			Unbreakable:1
+		}
+	}
+}

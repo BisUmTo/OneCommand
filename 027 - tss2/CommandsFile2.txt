@@ -1,0 +1,7 @@
+scoreboard objectives add 027trd stat.talkedToVillager
+weather clear
+setworldspawn
+gamerule doWeatherCycle false
+gamerule mobGriefing false
+gamerule keepInventory true
+gamerule sendCommandFeedback false

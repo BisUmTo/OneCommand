@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~ ~2 {NoGravity:1,Tags:["013tim"],CustomName:"Non Uccidermi, sono un timer!",CustomNameVisible:1}

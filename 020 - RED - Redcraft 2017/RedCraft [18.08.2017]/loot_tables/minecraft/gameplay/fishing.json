@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "minecraft:gameplay/fishing/junk",
+                    "weight": 10,
+                    "quality": -2
+                },
+                {
+                    "type": "loot_table",
+                    "name": "minecraft:gameplay/fishing/treasure",
+                    "weight": 5,
+                    "quality": 2
+                },
+                {
+                    "type": "loot_table",
+                    "name": "minecraft:gameplay/fishing/fish",
+                    "weight": 85,
+                    "quality": -1
+                }
+            ]
+        },
+		{
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 499
+                },
+                {
+                    "type": "loot_table",
+                    "name": "custom:fish_heads",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

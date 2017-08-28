@@ -1,0 +1,35 @@
+1,5
+{"text":"[1.11.X]","bold":true,"color":"dark_red"}
+{"text":"SideBar","underlined":true}
+by
+{"text":"BisUmTo","bold":true,"color":"red"}
+fill ~1 ~3 ~ ~-2 ~-5 ~%P2% air
+playsound entity.generic.explode hostile @a ~ ~ ~ 10 1
+say [BisUmTo] Thanks for playing with my command!
+particle hugeexplosion ~ ~ ~4 1 1 1 1 20 force
+2,5
+{"text":"SHOW SCORES","bold":true,"color":"green"}
+Right-click
+this sign
+to get it
+/execute @p ~ ~ ~ trigger YT add 1
+playsound entity.villager.yes neutral @a ~ ~ ~ 10 1
+
+
+1,3
+{"text":"[ACTIVATE]","bold":true,"color":"green"}
+Right-click
+this sign to
+activate machine
+blockdata ~-1 ~-2 ~2 {auto:1b}
+say "Dinamic SiderBar" machine activated!
+playsound block.piston.contract block @a ~ ~ ~ 10 1
+
+2,3
+{"text":"[DEACTIVATE]","bold":true,"color":"dark_red"}
+Right-click
+this sign to
+deactivate
+blockdata ~ ~-2 ~2 {auto:0b}
+say "Dinamic SiderBar" machine deactivated!
+playsound block.piston.extend block @a ~ ~ ~ 10 1

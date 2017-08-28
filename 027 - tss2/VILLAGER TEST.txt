@@ -1,0 +1,26 @@
+Twerking = gamerule randomTickSpeed 20
+
+LV 0
+"Villager Bloccato, droppa un blocco per sbloccarlo"
+
+1 blocco -> LV 1
+ascia + 1 blocco -> efficienza 2
+ascia + 4 blocchi -> looting 3
+"Villager lv1 1, 1|8 blocchi di smeraldi"
+"droppa un blocco di smeraldo su un pezzo di terra per trasfomarlo in grass"
+
+
+8 blocchi -> LV2
+secchio + 4 blocchi -> acqua
+secchio + 16 balle -> lava
+cobblestone + 1 blocco -> gravel
+"Villager lv1 2, 8|32 blocchi di smeraldi"
+"droppa un blocco di smeraldo su un blocco di magma per trasformarlo in slime_block"
+No keepinventory
+
+32 blocchi -> LV3
+beetrot see + 1 diamante -> canne da zucchero
+patata velenosa + 1 diamante -> mela
+"Villager lv1 3"
+"droppa un blocco di smeraldo su un'endermite per andare nell'end"
+Sì Mobgriefing

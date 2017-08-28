@@ -1,0 +1,1 @@
+title @s actionbar ["",{"text":"PROVA SETTIMANALE","bold":true,"color":"gold"},{"text":": Scambia coi "},{"text":"Villager","color":"gold"},{"text":"! "},{"score":{"name":"@s","objective":"ProvaSett2"}}]

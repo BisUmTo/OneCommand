@@ -1,0 +1,8 @@
+/scoreboard objectives add 010SLP dummy
+/scoreboard objectives add 010KBD trigger
+
+
+
+setblock ~1 ~-3 ~-12 minecraft:wall_sign 0 replace {Text1:"{\"text\":\"[Command]\",\"color\":\"gold\",\"bold\":true}",Text2:"{\"text\":\"The Alchemist\",\"color\":\"black\",\"underlined\":true}",Text3:"{\"text\":\"by\",\"color\":\"black\"}",Text4:"{\"text\":\"TheRedEngineer\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"say A new way to survive!\"},\"color\":\"red\"}"}
+
+setblock ~1 ~1 ~20 minecraft:wall_sign 0 replace {Text1:"{\"text\":\"[Start Game]\",\"color\":\"dark_green\",\"bold\":true}",Text2:"{\"text\":\"Right-click\",\"color\":\"black\"}",Text3:"{\"text\":\"this sign\",\"color\":\"black\"}",Text4:"{\"text\":\"to start\",\"color\":\"black\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players set @p 012STT 1\"}}"}

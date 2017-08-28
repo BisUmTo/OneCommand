@@ -1,0 +1,6 @@
+title @a times 5 60 5
+title @a title {"text":"The Alchemist","color":"red"}
+title @a subtitle {"text":"was successfully installed","color":"gold"}
+tellraw @a ["",{"text":"'The Alchemist' - a new survival concept in vanilla Minecraft ","color":"gold","bold":"true"},{"text":"by "},{"text":"TheRedEngineer\n","color":"red","bold":"true"},{"text":"\n                    youtube.com/c/TheRedEng\n\n","color":"gold","clickEvent":{"action":"open_url","value":"https://www.youtube.com/c/TheRedEng"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"click here to open link"}]}}},{"text":"Credit TheRedEngineer if you are using this creation\n","color":"red"},{"text":"Don't re-upload this command: provide my YT link!\n","color":"red"}]
+tellraw @a ["",{"text":">> Wiki & craftings","color":"light_purple","bold":"true","clickEvent":{"action":"open_url","value":"http://www.theredengineer.com/the-alchemist.html"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"click to open link"}]}}}]
+tellraw @a ["",{"text":">> 1.11+ Version by BisUmTo","bold":true,"color":"light_purple","clickEvent":{"action":"open_url","value":"http://bit.ly/BisUmTo"},"hoverEvent":{"action":"show_text","value":"click to open link"}}]

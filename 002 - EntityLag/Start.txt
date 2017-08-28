@@ -1,0 +1,3 @@
+scoreboard objectives add 002ATS dummy
+gamerule sendcommand feedback false
+tellraw @a ["",{"text":"\n\n"},{"text":"\"Which entity does lag?\" in Minecraft [1.11.X]","color":"gold"},{"text":" by\n"},{"text":"BisUmTo","bold":true,"color":"dark_red"},{"text":"\n"},{"text":"youtube.com/c/BisUmTo","color":"gold","clickEvent":{"action":"open_url","value":"http://youtube.com/c/BisUmTo"},"hoverEvent":{"action":"show_text","value":"Click here to visit my channel"}},{"text":"\n\n"},{"text":"Credit BisUmTo if you are using this creation\nDon't re-upload this command: provide my youtube link!","color":"dark_red"},{"text":"\n\n "}]

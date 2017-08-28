@@ -1,0 +1,27 @@
+commandBlockOutput  	command
+logAdminCommands		enchant book
+sendCommandFeedback		written book
+
+keepInventory			testa player
+doMobLoot				carne
+doTileDrops				blocco smeraldo	
+doEntityDrops			barca
+
+doMobSpawning			spawner
+mobGriefing				testa creeper
+maxEntityCramming		barre di ferro
+
+naturalRegeneration		pozione
+disableElytraMovementCheck	elytra
+spectatorsGenerateChunks	blocco terra
+
+
+spawnRadius				bussola
+reducedDebugInfo		mappa vuota
+showDeathMessages		testa scheletro
+
+doDaylightCycle 		orologio
+doWeatherCycle 			secchiello
+doFireTick				blazeroad
+randomTickSpeed			arboscello
+SurreaIPower

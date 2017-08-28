@@ -1,0 +1,51 @@
+https://s3.amazonaws.com/Minecraft.Download/versions/1.10.2/minecraft_server.1.10.2.jar
+java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+https://www.noip.com
+
+
+
+muro invallicabile
+
+
+RAM - http://amzn.to/2cUds5J
+GPU - http://amzn.to/2d9mvzB
+MB - http://amzn.to/2cY6dgk
+CPU - http://amzn.to/2cY6oZc
+PSU - http://amzn.to/2d9mLyw
+SSD - http://amzn.to/2cUcyq9
+CASE - http://amzn.to/2cY6EXZ
+LC - http://amzn.to/2cY70xW
+§aCiao
+
+execute @e[type=Creeper,score_Random_min=1;tag=Random] ~ ~ ~ scoreboard teams join Creeper_Rosso @r[tag=!ingioco,x=-1000,y=100,z=0,r=40,teams=!Teschio_Nero] 
+
+
+
+I lupi attaccano pecore, scheletri, conigli e dalla 1.8 anche gli scheletri wither se si trovano nel raggio di 16 blocchi.
+Per eccezione della 1.8 nella quale era di colore arancione
+Beh Innanzitutto non attaccano più le pecore e i conigli ma difenderanno il padrone se quest’ ultimo sta combattendo.
+beh ma allora voi vi chiederete cosa cambia tra quando è a cuccia e non? Le azioni che potrà svolgere sono le seguenti
+Se il giocatore dista più 12 blocchi il cane si teletrasporterà invece di camminare
+Ed infine se il padrone è all’interno di un’area di blocchi non solidi, come in questa dimostrazione, bisu è sul vetro e il cane non si teletrasporta, appena è presente un blocco 
+solido il cane si teletrasporterà.
+La coda di un lupo si alza e si abbassa a seconda della sua salute. La % della vita è determinata dall’angolo di inclinazione rispetto all’asse verticale, in questo caso è 
+posizionata a 100°, il che significa che la sua salute è al massimo.
+Per farli accoppiare, i cani per prima cosa devono avere il massimo della salute ed essere nuovamente nutriti.
+e poi manca quella del lama]
+che la dici tu
+e siamo apposto direi		
+
+
+
+
+
+
+
+
+night true false
+gm 0 1 3
+
+
+
+
+
