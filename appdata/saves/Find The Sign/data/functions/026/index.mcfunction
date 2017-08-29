@@ -11,6 +11,7 @@ gamerule doLimitedCrafting true
 gamerule announceAdvancements false
 gamerule reducedDebugInfo true
 gamerule doEntityDrops false
+gamerule sendCommandFeedback false
 
 scoreboard objectives add 026dth stat.deaths
 scoreboard objectives add 026dts deathCount
@@ -51,6 +52,7 @@ execute @e[type=armor_stand,tag=026spw] ~ ~ ~ scoreboard players set @a[r=0] 026
 ###########
 
 # RESET LIVELLO #
+execute @a[score_LEVEL_min=-110,score_LEVEL=-110,tag=026gjl] ~ ~ ~ scoreboard players tag @a add 026rst
 execute @a[score_LEVEL_min=-110,score_LEVEL=-110] ~ ~ ~ scoreboard players operation @a[score_026lvl_min=1] LEVEL = @s 026lvl
 execute @a[score_LEVEL_min=-110,score_LEVEL=-110] ~ ~ ~ scoreboard players set @a[score_026lvl_min=0,score_026lvl=0] LEVEL -1
 #################
@@ -201,7 +203,7 @@ execute @a[score_LEVEL_min=9,score_LEVEL=10] ~ ~ ~ execute @e[tag=026sl9] ~ ~ ~ 
 tp @a[score_LEVEL_min=10,score_LEVEL=10] @e[tag=026lv10,type=armor_stand]
 execute @a[score_LEVEL_min=10,score_LEVEL=10 ~ ~ ~ tp @e[tag=026spw,type=armor_stand] @e[tag=026lv10]
 execute @e[tag=026ar0] ~ ~ ~ detect ~ ~ ~ wall_sign * blockdata ~ ~ ~ {Text4:"{\"text\":\"\"}",Text3:"{\"italic\":true,\"color\":\"white\",\"text\":\"Find The Sign\"}",Text2:"{\"underlined\":true,\"color\":\"dark_red\",\"text\":\"▶Congratulazioni◀\"}",id:"minecraft:sign",Text1:"{\"clickEvent\":{\"action\":\"run_command\",\"value\":\"trigger LEVEL set 11\"},\"text\":\"\"}"}
-execute @a[score_026lvl_min=10,score_026lvl=10] ~ ~ ~ detect ~ ~ ~ water * replaceitem entity @s slot.armor.head sign 1 0 {CanPlaceOn:["minecraft:clay"]}
+execute @a[score_026lvl_min=10,score_026lvl=10] ~ ~ ~ detect ~ ~ ~ water * replaceitem entity @s slot.armor.head sign 1 0 {HideFlags:16,BlockEntityTag:{Text4:"{\"text\":\"\"}",Text3:"{\"italic\":true,\"color\":\"white\",\"text\":\"Find The Sign\"}",Text2:"{\"underlined\":true,\"color\":\"dark_red\",\"text\":\"▶Congratulazioni◀\"}",id:"minecraft:sign",Text1:"{\"clickEvent\":{\"action\":\"run_command\",\"value\":\"trigger LEVEL set 11\"},\"text\":\"\"}"},CanPlaceOn:["minecraft:clay"],display:{Lore:["§7§lClay §r§7ottimo direi!"],Name:"§f§o§lFind the Sign §r- §4§lLV10"}}
 # Reset #
 execute @a[score_LEVEL_min=10,score_LEVEL=11] ~ ~ ~ execute @e[tag=026ar0] ~ ~ ~ setblock ~ ~ ~ air 0 destroy
 ##############
@@ -240,12 +242,16 @@ execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ tellraw @s ["",{"text":"▶ 
 execute @a[score_LEVEL_min=1,score_LEVEL=10] ~ ~ ~ tellraw @s ["",{"text":"▶ RESETTA IL LIVELLO ◀","color":"gold","clickEvent":{"action":"run_command","value":"/trigger LEVEL set -110"}},{"text":"\n "}]
 
 execute @a[score_LEVEL_min=1,score_LEVEL=10] ~ ~ ~ tellraw @s ["",{"text":"▶ USA UN JOLLY ◀","color":"red","clickEvent":{"action":"run_command","value":"/trigger LEVEL set -118"}},{"text":"\n"},{"text":"Hai ancora ","color":"gray"},{"score":{"name":"@s","objective":"026jll"},"color":"gray"},{"text":" Jolly","color":"gray"},{"text":"\n "}]
+
+scoreboard players tag @a[score_LEVEL_min=-1,score_LEVEL=10] remove 026gjl
 ##################
 ##################
 
 # TEMPO E JOLLY #
 scoreboard players tag @a[score_LEVEL_min=-1,score_LEVEL=-1] add 026igm
+scoreboard players reset @a[score_LEVEL_min=-1,score_LEVEL=-1] *
 scoreboard players tag @a[score_LEVEL_min=11,score_LEVEL=11] remove 026igm
+scoreboard players tag @a[score_LEVEL_min=0,score_LEVEL=0] remove 026igm
 execute @a[score_LEVEL_min=11,score_LEVEL=11] ~ ~ ~ scoreboard players reset @e[tag=026spw,type=armor_stand]
 execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players reset @e[tag=026spw,type=armor_stand]
 execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players add @e[tag=026spw,type=armor_stand] 026p1s 0
@@ -266,6 +272,8 @@ execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players add @e[score_026p9m_min=6] 0
 execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players remove @e[score_026p9m_min=6] 026p9m 6
 
 scoreboard players set @a[score_LEVEL_min=-1,score_LEVEL=-1] 026jll 3
+scoreboard players tag @a[score_LEVEL_min=-1,score_LEVEL=-1] remove 026gjl
+scoreboard players tag @a[score_LEVEL_min=-1,score_LEVEL=-1] remove 026fjl
 execute @e[tag=026spw,type=armor_stand,score_026p1h_min=1] ~ ~ ~ title @a[score_026jll_min=3,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1h"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ✪","color":"green"}]
 execute @e[tag=026spw,type=armor_stand,score_026p1h_min=1] ~ ~ ~ title @a[score_026jll_min=2,score_026jll=2,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1h"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ","color":"green"},{"text":"✪","color":"dark_red"}]
 execute @e[tag=026spw,type=armor_stand,score_026p1h_min=1] ~ ~ ~ title @a[score_026jll_min=1,score_026jll=1,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1h"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ","color":"green"},{"text":"✪ ✪","color":"dark_red"}]
@@ -275,24 +283,48 @@ execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ 
 execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ title @a[score_026jll_min=2,score_026jll=2,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ","color":"green"},{"text":"✪","color":"dark_red"}]
 execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ title @a[score_026jll_min=1,score_026jll=1,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ","color":"green"},{"text":"✪ ✪","color":"dark_red"}]
 execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ title @a[score_026jll_min=0,score_026jll=0,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ✪","color":"dark_red"}]
+
 # Jolly #
-# 0. X
-# 1. La pazienza è la virtù dei forti.
-# 2. Quando a letto stanco sali, lascia i crucci agli stivali.
-# 3. L'odio segue l'amore, come la cenere il fuoco.
-# execute @e[tag=026jl4] ~ ~ ~ summon fireworks_rocket ~1 ~2 ~1 {FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16745753,16734492],FadeColors:[I;16764426,16774917]},{Type:4,Colors:[I;16775501],FadeColors:[I;16757532]}]}}}}
-# 4. Dal destino non si può scappare, lo si può solo rinviare l'appuntamento con il destino.
-# playsound minecraft:entity.endermen.teleport master @a ~ ~ ~
-# execute @e[tag=026ar4] ~ ~ ~ teleport @a ~2 ~.5 ~2
-# execute @a ~ ~ ~ particle portal ~ ~.8 ~ .4 .8 .4 0 100
-# 5. Non sempre la pecora nera è l'intrusa.
-# 6. L'antico guardiano ti indicherà la strada versi il successo.
-# entitydata @e[type=elder_guardian] {Rotation:[320f,4f]}
-# 7. Le luci rosse sono come la stella polare: è irraggiungibile, ma indica la retta via.
-# 8. 
-# execute @e[tag=026ar8] ~ ~ ~ summon mooshroom ~ ~-.7 ~.7 {Rotation:[45f,45f],Age:-1024,NoAI:1,Invulnerable:1,Tags:["026moo"]}
-# 9. A volte per raggiungere il proprio obiettivo non basta salire, ma bisogna anche saper scendere.
-# 10. L'acqua può solo rinfrescarti le idee.
+execute @a[tag=026rst] ~ ~ ~ scoreboard players tag @a add 026gjl
+scoreboard players tag @a[tag=026rst] remove 026rst
+
+execute @a[tag=026gjl,score_LEVEL_min=-118,score_LEVEL=-118] ~ ~ ~ tellraw @a {"text":"\nHai già usato il Jolly in questo livello.\n","color":"dark_red"}
+execute @a[tag=026gjl,score_LEVEL_min=-118,score_LEVEL=-118] ~ ~ ~ playsound minecraft:entity.endermen.hurt player @a ~ ~ ~ 100 .1
+execute @a[tag=026gjl] ~ ~ ~ scoreboard players set @a LEVEL -1024
+
+execute @a[score_026jll=0,score_LEVEL_min=-118,score_LEVEL=-118] ~ ~ ~ tellraw @a {"text":"\nHai già usato tutti Jolly.\n","color":"dark_red"}
+execute @a[score_026jll=0,score_LEVEL_min=-118,score_LEVEL=-118] ~ ~ ~ playsound minecraft:entity.endermen.hurt player @a ~ ~ ~ 100 .1
+execute @a[score_026jll=0,score_LEVEL_min=-118,score_LEVEL=-118] ~ ~ ~ scoreboard players set @a LEVEL -1024
+
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=1,score_026lvl=1] ~ ~ ~ tellraw @a {"text":"\nLa pazienza è la virtù dei forti.\n","color":"gray"}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=2,score_026lvl=2] ~ ~ ~ tellraw @a {"text":"\nQuando a letto stanco sali, lascia i crucci agli stivali.\n","color":"gray"}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=3,score_026lvl=3] ~ ~ ~ tellraw @a {"text":"\nL'odio segue l'amore, come la cenere il fuoco.\n","color":"gray"}
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=3,score_026lvl=3] ~ ~ ~ execute @e[tag=026jl4] ~ ~ ~ summon fireworks_rocket ~1 ~2 ~1 {FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16745753,16734492],FadeColors:[I;16764426,16774917]},{Type:4,Colors:[I;16775501],FadeColors:[I;16757532]}]}}}}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=4,score_026lvl=4] ~ ~ ~ tellraw @a {"text":"\nDal destino non si può scappare, lo si può solo rinviare l'appuntamento con il destino.\n","color":"gray"}
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=4,score_026lvl=4] ~ ~ ~ playsound minecraft:entity.endermen.teleport master @a ~ ~ ~
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=4,score_026lvl=4] ~ ~ ~ execute @e[tag=026ar4] ~ ~ ~ teleport @a ~2 ~.5 ~2
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=5,score_026lvl=5] ~ ~ ~ tellraw @a {"text":"\nNon sempre la pecora nera è l'intrusa.\n","color":"gray"}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=6,score_026lvl=6] ~ ~ ~ tellraw @a {"text":"\nL'antico guardiano ti indicherà la strada versi il successo.\n","color":"gray"}
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=6,score_026lvl=6] ~ ~ ~ entitydata @e[type=elder_guardian] {Rotation:[320f,4f]}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=7,score_026lvl=7] ~ ~ ~ tellraw @a {"text":"\nLe luci rosse sono come la stella polare: è irraggiungibile, ma indica la retta via.\n","color":"gray"}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=8,score_026lvl=8] ~ ~ ~ tellraw @a {"text":"\nCi vogliono molti anni per diventare giovane.\n","color":"gray"}
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=8,score_026lvl=8] ~ ~ ~ execute @e[tag=026ar8] ~ ~ ~ summon mooshroom ~ ~-.7 ~.7 {Rotation:[45f,45f],Age:-1024,NoAI:1,Invulnerable:1,Tags:["026moo"]}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=9,score_026lvl=9] ~ ~ ~ tellraw @a {"text":"\nA volte per raggiungere il proprio obiettivo non basta salire, ma bisogna anche saper scendere.\n","color":"gray"}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=10,score_026lvl=10] ~ ~ ~ tellraw @a {"text":"\nL'acqua può solo rinfrescarti le idee.\n","color":"gray"}
+
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118] ~ ~ ~ playsound minecraft:item.bottle.fill_dragonbreath player @a ~ ~ ~ 100
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118] ~ ~ ~ scoreboard players remove @a 026jll 1
+execute @a[score_LEVEL_min=-118,score_LEVEL=-118,score_026lvl_min=1,score_026lvl=10] ~ ~ ~ scoreboard players tag @a add 026gjl
 ################
 ################
 
