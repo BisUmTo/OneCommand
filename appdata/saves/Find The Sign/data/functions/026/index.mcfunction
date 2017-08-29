@@ -9,17 +9,26 @@ gamerule logAdminCommands false
 gamerule showDeathMessages false
 gamerule doLimitedCrafting true
 gamerule announceAdvancements false
+gamerule reducedDebugInfo true
+gamerule doEntityDrops false
 
 scoreboard objectives add 026dth stat.deaths
 scoreboard objectives add 026dts deathCount
 scoreboard objectives add 026lvl dummy
+scoreboard objectives add 026p1t dummy
+scoreboard objectives add 026p1s dummy
+scoreboard objectives add 026p9s dummy
+scoreboard objectives add 026p1m dummy
+scoreboard objectives add 026p9m dummy
+scoreboard objectives add 026p1h dummy
+scoreboard objectives add 026jll dummy
 scoreboard objectives add LEVEL trigger
 scoreboard teams add 026nCl
 scoreboard teams option 026nCl collisionRule never
 scoreboard players enable @a LEVEL
 
-execute @a[score_LEVEL_min=-1] ~ ~ ~ scoreboard players operation @a[rm=0] LEVEL = @s LEVEL
-execute @a ~ ~ ~ scoreboard players operation @s[score_LEVEL_min=0] 026lvl = @s LEVEL
+execute @a[score_LEVEL_min=-1,score_LEVEL=11] ~ ~ ~ scoreboard players operation @a LEVEL = @s LEVEL
+execute @a ~ ~ ~ scoreboard players operation @s[score_LEVEL_min=0,score_LEVEL=10] 026lvl = @s LEVEL
 
 execute @e[tag=026spw,type=armor_stand] ~ ~ ~ setworldspawn ~ ~ ~
 
@@ -40,6 +49,12 @@ scoreboard players tag @a add 026spw
 execute @e[type=armor_stand,tag=026spw] ~ ~ ~ scoreboard players set @a[r=0] 026dth 0
 ###########
 ###########
+
+# RESET LIVELLO #
+execute @a[score_LEVEL_min=-110,score_LEVEL=-110] ~ ~ ~ scoreboard players operation @a[score_026lvl_min=1] LEVEL = @s 026lvl
+execute @a[score_LEVEL_min=-110,score_LEVEL=-110] ~ ~ ~ scoreboard players set @a[score_026lvl_min=0,score_026lvl=0] LEVEL -1
+#################
+#################
 
 # CREDITI #
 execute @a[score_LEVEL_min=-83,score_LEVEL=-83] ~ ~ ~ tellraw @a ["",{"text":"\n\n\n▶ BisUmTo ◀","color":"dark_red","bold":true},{"text":"\nCiao! Sono BisUmTo, un giovane RedStoner e OneCommander Italiano appassionato alle CustomMap.\nIn questa Mappa mi sono dedicato alla parte funzionale di quest'ultima cercando di non utilizzare alcun command_block all'interno del gioco.\n\n▶ YouTube: "},{"text":"BisUmTo","italic":true,"underlined":true,"color":"dark_red","clickEvent":{"action":"open_url","value":"https://youtube.com/BisUmTo"},"hoverEvent":{"action":"show_text","value":"Clicca QUI per visitare il suo canale YouTube"}},{"text":"\n\n▶ Telegram: "},{"text":"@BisUmTo","italic":true,"underlined":true,"color":"dark_red","clickEvent":{"action":"open_url","value":"https://t.me/BisUmTo"},"hoverEvent":{"action":"show_text","value":"Clicca QUI per visitare il suo canale Telegram"}}]
@@ -146,6 +161,7 @@ execute @e[tag=026ar7] ~ ~ ~ detect ~ ~ ~ wall_sign * blockdata ~ ~ ~ {Text4:"{\
 # Reset #
 execute @a[score_LEVEL_min=6,score_LEVEL=7] ~ ~ ~ execute @e[tag=026ar6] ~ ~ ~ blockdata ~ ~ ~ {Items:[{Slot:2b,id:"minecraft:sign",Count:1b,tag:{HideFlags:16,BlockEntityTag:{Text4:"{\"text\":\"\"}",Text3:"{\"italic\":true,\"color\":\"white\",\"text\":\"Find The Sign\"}",Text2:"{\"underlined\":true,\"color\":\"dark_red\",\"text\":\"▶Prossimo Livello◀\"}",id:"minecraft:sign",Text1:"{\"clickEvent\":{\"action\":\"run_command\",\"value\":\"trigger LEVEL set 7\"},\"text\":\"\"}"},display:{Lore:["§7§lVivere senza poesia è come navigare senza..."],Name:"§f§o§lFind the Sign §r- §4§lLV6"},CanPlaceOn:["minecraft:monster_egg"]},Damage:0s}]}
 execute @a[score_LEVEL_min=6,score_LEVEL=7] ~ ~ ~ execute @e[tag=026ar7] ~ ~ ~ setblock ~ ~ ~ air 0 destroy
+execute @a[score_LEVEL_min=6,score_LEVEL=7] ~ ~ ~ entitydata @e[type=elder_guardian] {Rotation:[270f,0f]}
 #############
 #############
 
@@ -161,11 +177,13 @@ tp @a[score_LEVEL_min=8,score_LEVEL=8] @e[tag=026lv8,type=armor_stand]
 execute @a[score_LEVEL_min=8,score_LEVEL=8] ~ ~ ~ tp @e[tag=026spw,type=armor_stand] @e[tag=026lv8]
 execute @e[score_LEVEL_min=8,score_LEVEL=9] ~ ~ ~ execute @e[tag=026ar8] ~ ~ ~ blockdata ~ ~ ~ {Items:[{Slot:13b,id:"minecraft:sign",Count:1b,tag:{HideFlags:16,BlockEntityTag:{Text4:"{\"text\":\"\"}",Text3:"{\"italic\":true,\"color\":\"white\",\"text\":\"Find The Sign\"}",Text2:"{\"underlined\":true,\"color\":\"dark_red\",\"text\":\"▶Prossimo Livello◀\"}",id:"minecraft:sign",Text1:"{\"clickEvent\":{\"action\":\"run_command\",\"value\":\"trigger LEVEL set 9\"},\"text\":\"\"}"},display:{Lore:["§7§lWindows XP §r§7ha smesso di funzionare!"],Name:"§f§o§lFind the Sign §r- §4§lLV8"},CanPlaceOn:["minecraft:stained_glass"]},Damage:0s}],id:"minecraft:chest",Lock:"",CustomName:"§f§oFind The Sign"}
 execute @e[tag=026ar9] ~ ~ ~ detect ~ ~ ~ wall_sign * blockdata ~ ~ ~ {Text4:"{\"text\":\"\"}",Text3:"{\"italic\":true,\"color\":\"white\",\"text\":\"Find The Sign\"}",Text2:"{\"underlined\":true,\"color\":\"dark_red\",\"text\":\"▶Prossimo Livello◀\"}",id:"minecraft:sign",Text1:"{\"clickEvent\":{\"action\":\"run_command\",\"value\":\"trigger LEVEL set 9\"},\"text\":\"\"}"}
+entitydata @e[tag=026moo] {Age:-1024}
 #############
 # Reset #
 execute @a[score_LEVEL_min=8,score_LEVEL=9] ~ ~ ~ execute @e[tag=026sl8] ~ ~ ~ setblock ~ ~-1 ~ stone
 execute @a[score_LEVEL_min=8,score_LEVEL=9] ~ ~ ~ execute @e[tag=026sl8] ~ ~ ~ setblock ~ ~-1 ~ redstone_block 
 execute @a[score_LEVEL_min=8,score_LEVEL=9] ~ ~ ~ execute @e[tag=026ar9] ~ ~ ~ setblock ~ ~ ~ air 0 destroy
+execute @a[score_LEVEL_min=8,score_LEVEL=9] ~ ~ ~ kill @e[tag=026moo]
 #############
 #############
 
@@ -173,6 +191,9 @@ execute @a[score_LEVEL_min=8,score_LEVEL=9] ~ ~ ~ execute @e[tag=026ar9] ~ ~ ~ s
 tp @a[score_LEVEL_min=9,score_LEVEL=9] @e[tag=026lv9,type=armor_stand]
 execute @a[score_LEVEL_min=9,score_LEVEL=9] ~ ~ ~ tp @e[tag=026spw,type=armor_stand] @e[tag=026lv9]
 entitydata @e[tag=026dra] {Time:1}
+# Reset #
+execute @a[score_LEVEL_min=9,score_LEVEL=10] ~ ~ ~ execute @e[tag=026sl9] ~ ~ ~ setblock ~ ~-1 ~ stone
+execute @a[score_LEVEL_min=9,score_LEVEL=10] ~ ~ ~ execute @e[tag=026sl9] ~ ~ ~ setblock ~ ~-1 ~ redstone_block 
 #############
 #############
 
@@ -199,23 +220,81 @@ execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ playsound minecraft:entity.p
 execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ title @s title {"text":"Livello ","extra":[{"score":{"name":"@s","objective":"026lvl"}}]}
 execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ particle totem ~ ~.8 ~ .4 .8 .4 0 100
 
-execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 0"}
-execute @a[score_LEVEL_min=1,score_LEVEL=1] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 1"}
-execute @a[score_LEVEL_min=2,score_LEVEL=2] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 2"}
-execute @a[score_LEVEL_min=3,score_LEVEL=3] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 3"}
-execute @a[score_LEVEL_min=4,score_LEVEL=4] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 4"}
-execute @a[score_LEVEL_min=5,score_LEVEL=5] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 5"}
-execute @a[score_LEVEL_min=6,score_LEVEL=6] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 6"}
-execute @a[score_LEVEL_min=7,score_LEVEL=7] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 7"}
-execute @a[score_LEVEL_min=8,score_LEVEL=8] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 8"}
-execute @a[score_LEVEL_min=9,score_LEVEL=9] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 9"}
-execute @a[score_LEVEL_min=10,score_LEVEL=10] ~ ~ ~ title @a subtitle {"text":"Nome Del Livello 10"}
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ title @s subtitle {"text":"Atrio","color":"dark_red"}
+execute @a[score_LEVEL_min=1,score_LEVEL=1] ~ ~ ~ title @s subtitle {"text":"Pianura","color":"dark_green"}
+execute @a[score_LEVEL_min=2,score_LEVEL=2] ~ ~ ~ title @s subtitle {"text":"Colline innevate"}
+execute @a[score_LEVEL_min=3,score_LEVEL=3] ~ ~ ~ title @s subtitle {"text":"Inferi","color":"gold"}
+execute @a[score_LEVEL_min=4,score_LEVEL=4] ~ ~ ~ title @s subtitle {"text":"Mesa","color":"red"}
+execute @a[score_LEVEL_min=5,score_LEVEL=5] ~ ~ ~ title @s subtitle {"text":"Miniera","color":"gray"}
+execute @a[score_LEVEL_min=6,score_LEVEL=6] ~ ~ ~ title @s subtitle {"text":"Oceano","color":"dark_aqua"}
+execute @a[score_LEVEL_min=7,score_LEVEL=7] ~ ~ ~ title @s subtitle {"text":"Giungla","color":"green"}
+execute @a[score_LEVEL_min=8,score_LEVEL=8] ~ ~ ~ title @s subtitle {"text":"Funghi","color":"dark_gray"}
+execute @a[score_LEVEL_min=9,score_LEVEL=9] ~ ~ ~ title @s subtitle {"text":"Omega","color":"light_purple"}
+execute @a[score_LEVEL_min=10,score_LEVEL=10] ~ ~ ~ title @s subtitle {"text":"Finale","color":"aqua"}
 gamemode 3 @a[score_LEVEL_min=11]
 execute @a[score_LEVEL_min=11,score_LEVEL=11] ~ ~ ~ title @s title {"text":"Congratulazioni","color":"dark_red"}
 execute @a[score_LEVEL_min=11,score_LEVEL=11] ~ ~ ~ title @s subtitle {"text":"Find The Sign","color":"white","italic":true}
+execute @a[score_LEVEL_min=11,score_LEVEL=11] ~ ~ ~ scoreboard players set @s 026lvl 0
+
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ tellraw @s ["",{"text":"▶ RESETTA IL LIVELLO ◀","color":"gold","clickEvent":{"action":"run_command","value":"/trigger LEVEL set -110"}},{"text":"\n "}]
+execute @a[score_LEVEL_min=1,score_LEVEL=10] ~ ~ ~ tellraw @s ["",{"text":"▶ RESETTA IL LIVELLO ◀","color":"gold","clickEvent":{"action":"run_command","value":"/trigger LEVEL set -110"}},{"text":"\n "}]
+
+execute @a[score_LEVEL_min=1,score_LEVEL=10] ~ ~ ~ tellraw @s ["",{"text":"▶ USA UN JOLLY ◀","color":"red","clickEvent":{"action":"run_command","value":"/trigger LEVEL set -118"}},{"text":"\n"},{"text":"Hai ancora ","color":"gray"},{"score":{"name":"@s","objective":"026jll"},"color":"gray"},{"text":" Jolly","color":"gray"},{"text":"\n "}]
 ##################
 ##################
 
-# TEMPO #
+# TEMPO E JOLLY #
+scoreboard players tag @a[score_LEVEL_min=-1,score_LEVEL=-1] add 026igm
+scoreboard players tag @a[score_LEVEL_min=11,score_LEVEL=11] remove 026igm
+execute @a[score_LEVEL_min=11,score_LEVEL=11] ~ ~ ~ scoreboard players reset @e[tag=026spw,type=armor_stand]
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players reset @e[tag=026spw,type=armor_stand]
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players add @e[tag=026spw,type=armor_stand] 026p1s 0
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players add @e[tag=026spw,type=armor_stand] 026p9s 0
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players add @e[tag=026spw,type=armor_stand] 026p1m 0
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players add @e[tag=026spw,type=armor_stand] 026p9m 0
+execute @a[score_LEVEL_min=-1,score_LEVEL=-1] ~ ~ ~ scoreboard players add @e[tag=026spw,type=armor_stand] 026p1h 0
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players add @e[tag=026spw,type=armor_stand] 026p1t 1
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players add @e[score_026p1t_min=20] 026p1s 1
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players remove @e[score_026p1t_min=20] 026p1t 20
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players add @e[score_026p1s_min=10] 026p9s 1
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players remove @e[score_026p1s_min=10] 026p1s 10
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players add @e[score_026p9s_min=6] 026p1m 1
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players remove @e[score_026p9s_min=6] 026p9s 6
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players add @e[score_026p1m_min=10] 026p9m 1
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players remove @e[score_026p1m_min=10] 026p1m 10
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players add @e[score_026p9m_min=6] 026p1h 1
+execute @a[c=1,tag=026igm] ~ ~ ~ scoreboard players remove @e[score_026p9m_min=6] 026p9m 6
+
+scoreboard players set @a[score_LEVEL_min=-1,score_LEVEL=-1] 026jll 3
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=1] ~ ~ ~ title @a[score_026jll_min=3,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1h"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ✪","color":"green"}]
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=1] ~ ~ ~ title @a[score_026jll_min=2,score_026jll=2,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1h"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ","color":"green"},{"text":"✪","color":"dark_red"}]
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=1] ~ ~ ~ title @a[score_026jll_min=1,score_026jll=1,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1h"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ","color":"green"},{"text":"✪ ✪","color":"dark_red"}]
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=1] ~ ~ ~ title @a[score_026jll_min=0,score_026jll=0,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1h"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ✪","color":"dark_red"}]
+
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ title @a[score_026jll_min=3,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ✪","color":"green"}]
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ title @a[score_026jll_min=2,score_026jll=2,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ","color":"green"},{"text":"✪","color":"dark_red"}]
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ title @a[score_026jll_min=1,score_026jll=1,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ","color":"green"},{"text":"✪ ✪","color":"dark_red"}]
+execute @e[tag=026spw,type=armor_stand,score_026p1h_min=0,score_026p1h=0] ~ ~ ~ title @a[score_026jll_min=0,score_026jll=0,score_026lvl_min=0,score_026lvl=10] actionbar ["",{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9m"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1m"}},{"text":":"},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p9s"}},{"score":{"name":"@e[tag=026spw,type=armor_stand]","objective":"026p1s"}},{"text":" - "},{"text":"✪ ✪ ✪","color":"dark_red"}]
+# Jolly #
+# 0. X
+# 1. La pazienza è la virtù dei forti.
+# 2. Quando a letto stanco sali, lascia i crucci agli stivali.
+# 3. L'odio segue l'amore, come la cenere il fuoco.
+# execute @e[tag=026jl4] ~ ~ ~ summon fireworks_rocket ~1 ~2 ~1 {FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16745753,16734492],FadeColors:[I;16764426,16774917]},{Type:4,Colors:[I;16775501],FadeColors:[I;16757532]}]}}}}
+# 4. Dal destino non si può scappare, lo si può solo rinviare l'appuntamento con il destino.
+# playsound minecraft:entity.endermen.teleport master @a ~ ~ ~
+# execute @e[tag=026ar4] ~ ~ ~ teleport @a ~2 ~.5 ~2
+# execute @a ~ ~ ~ particle portal ~ ~.8 ~ .4 .8 .4 0 100
+# 5. Non sempre la pecora nera è l'intrusa.
+# 6. L'antico guardiano ti indicherà la strada versi il successo.
+# entitydata @e[type=elder_guardian] {Rotation:[320f,4f]}
+# 7. Le luci rosse sono come la stella polare: è irraggiungibile, ma indica la retta via.
+# 8. 
+# execute @e[tag=026ar8] ~ ~ ~ summon mooshroom ~ ~-.7 ~.7 {Rotation:[45f,45f],Age:-1024,NoAI:1,Invulnerable:1,Tags:["026moo"]}
+# 9. A volte per raggiungere il proprio obiettivo non basta salire, ma bisogna anche saper scendere.
+# 10. L'acqua può solo rinfrescarti le idee.
+################
+################
+
 scoreboard players set @a LEVEL -1024
 scoreboard players add @a 026lvl 0
