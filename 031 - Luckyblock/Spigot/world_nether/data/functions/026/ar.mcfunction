@@ -1,0 +1,1 @@
+give @p minecraft:armor_stand 1 0 {EntityTag:{Invisible:1,Marker:1,NoGravity:1,CustomNameVisible:1,Tags:["026arm"],CustomName:"§k~§r §4§lRegole§r §k~§r"}}

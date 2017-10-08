@@ -1,0 +1,326 @@
+[14:55:55] [Server thread/INFO]: Starting minecraft server version 1.12
+[14:55:55] [Server thread/INFO]: Loading properties
+[14:55:55] [Server thread/INFO]: Default game type: CREATIVE
+[14:55:56] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-cd6ba67-2a2d6d6 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[14:55:56] [Server thread/INFO]: Debug logging is disabled
+[14:55:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:55:56] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:55:56] [Server thread/INFO]: Generating keypair
+[14:55:56] [Server thread/INFO]: Starting Minecraft server on 192.168.1.147:25565
+[14:55:56] [Server thread/INFO]: Using default channel type
+[14:55:56] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[14:55:56] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7;dd00bb1
+[14:55:56] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[14:55:56] [Server thread/INFO]: Preparing level "LuckyBlock"
+[14:55:56] [Server thread/INFO]: -------- World Settings For [LuckyBlock] --------
+[14:55:56] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:55:56] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:55:56] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:55:56] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:55:56] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:55:56] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:55:56] [Server thread/INFO]: View Distance: 10
+[14:55:56] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Vine Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Mob Spawn Range: 4
+[14:55:56] [Server thread/INFO]: Max TNT Explosions: 100
+[14:55:56] [Server thread/INFO]: Structure Info Saving: true
+[14:55:56] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:55:56] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:55:56] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:55:56] [Server thread/INFO]: Random Lighting Updates: false
+[14:55:56] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[14:55:56] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:55:56] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[14:55:56] [Server thread/INFO]: Loaded 1 custom command functions
+[14:55:56] [Server thread/INFO]: -------- World Settings For [LuckyBlock_nether] --------
+[14:55:56] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:55:56] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:55:56] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:55:56] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:55:56] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:55:56] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:55:56] [Server thread/INFO]: View Distance: 10
+[14:55:56] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Vine Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Mob Spawn Range: 4
+[14:55:56] [Server thread/INFO]: Max TNT Explosions: 100
+[14:55:56] [Server thread/INFO]: Structure Info Saving: true
+[14:55:56] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:55:56] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:55:56] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:55:56] [Server thread/INFO]: Random Lighting Updates: false
+[14:55:56] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[14:55:56] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:55:56] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[14:55:56] [Server thread/INFO]: -------- World Settings For [LuckyBlock_the_end] --------
+[14:55:56] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:55:56] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:55:56] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:55:56] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:55:56] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:55:56] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[14:55:56] [Server thread/INFO]: View Distance: 10
+[14:55:56] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Vine Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[14:55:56] [Server thread/INFO]: Mob Spawn Range: 4
+[14:55:56] [Server thread/INFO]: Max TNT Explosions: 100
+[14:55:56] [Server thread/INFO]: Structure Info Saving: true
+[14:55:56] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:55:56] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:55:56] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[14:55:56] [Server thread/INFO]: Random Lighting Updates: false
+[14:55:56] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[14:55:56] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:55:56] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[14:55:56] [Server thread/INFO]: Preparing start region for level 0 (Seed: -5573303073384220998)
+[14:55:56] [Server thread/INFO]: Preparing start region for level 1 (Seed: -5573303073384220998)
+[14:55:57] [Server thread/INFO]: Preparing start region for level 2 (Seed: -5573303073384220998)
+[14:55:57] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.7;dd00bb1
+[14:55:57] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[14:55:57] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R1 as the Bukkit adapter
+[14:55:57] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:55:57] [Server thread/INFO]: Done (1,388s)! For help, type "help" or "?"
+[14:59:25] [User Authenticator #1/INFO]: UUID of player BisUmTo is 0b9cf164-50b5-4996-b734-fda0e4fbcc92
+[14:59:25] [Server thread/INFO]: BisUmTo[/192.168.1.147:52533] logged in with entity id 10 at ([LuckyBlock]0.8243272351726882, 101.0, 2.5181301782817034)
+[14:59:54] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 0
+[15:00:12] [Server thread/INFO]: BisUmTo issued server command: /tp @p 1000 100 0
+[15:00:17] [Server thread/INFO]: BisUmTo issued server command: /setblock ~ ~ ~ stone
+[15:00:35] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 0
+[15:00:48] [Server thread/INFO]: BisUmTo issued server command: /reload
+[15:00:48] [Server thread/INFO]: BisUmTo: [0;31;1mPlease note that this command is not supported and may cause issues when using some plugins.[m
+[15:00:49] [Server thread/INFO]: BisUmTo: [0;31;1mIf you encounter any issues please use the /stop command to restart your server.[m
+[15:00:50] [Server thread/INFO]: Debug logging is disabled
+[15:00:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:00:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:00:50] [Server thread/INFO]: -------- World Settings For [LuckyBlock] --------
+[15:00:50] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:00:50] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:00:50] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:00:50] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:00:50] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:00:50] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:00:50] [Server thread/INFO]: View Distance: 10
+[15:00:50] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Mob Spawn Range: 4
+[15:00:50] [Server thread/INFO]: Max TNT Explosions: 100
+[15:00:50] [Server thread/INFO]: Structure Info Saving: true
+[15:00:50] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:00:50] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:00:50] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[15:00:50] [Server thread/INFO]: Random Lighting Updates: false
+[15:00:50] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:00:50] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:00:50] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:00:50] [Server thread/INFO]: -------- World Settings For [LuckyBlock_nether] --------
+[15:00:50] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:00:50] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:00:50] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:00:50] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:00:50] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:00:50] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:00:50] [Server thread/INFO]: View Distance: 10
+[15:00:50] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Mob Spawn Range: 4
+[15:00:50] [Server thread/INFO]: Max TNT Explosions: 100
+[15:00:50] [Server thread/INFO]: Structure Info Saving: true
+[15:00:50] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:00:50] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:00:50] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[15:00:50] [Server thread/INFO]: Random Lighting Updates: false
+[15:00:50] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:00:50] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:00:50] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:00:50] [Server thread/INFO]: -------- World Settings For [LuckyBlock_the_end] --------
+[15:00:50] [Server thread/INFO]: Item Despawn Rate: 6000
+[15:00:50] [Server thread/INFO]: Item Merge Radius: 2.5
+[15:00:50] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[15:00:50] [Server thread/INFO]: Experience Merge Radius: 3.0
+[15:00:50] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[15:00:50] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[15:00:50] [Server thread/INFO]: View Distance: 10
+[15:00:50] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Cane Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Melon Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Vine Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[15:00:50] [Server thread/INFO]: Mob Spawn Range: 4
+[15:00:50] [Server thread/INFO]: Max TNT Explosions: 100
+[15:00:50] [Server thread/INFO]: Structure Info Saving: true
+[15:00:50] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[15:00:50] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[15:00:50] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[15:00:50] [Server thread/INFO]: Random Lighting Updates: false
+[15:00:50] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[15:00:50] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[15:00:50] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[15:00:50] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.7;dd00bb1
+[15:00:50] [Server thread/INFO]: Loaded 1 custom command functions
+[15:00:50] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7;dd00bb1
+[15:00:50] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.7;dd00bb1
+[15:00:50] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[15:00:50] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_12_R1 as the Bukkit adapter
+[15:00:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:01:03] [Server thread/INFO]: BisUmTo: [0;32;1mReload complete.[m
+[15:01:03] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:01:03] [Server thread/INFO]: Loaded 1 custom command functions
+[15:01:11] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 0
+[15:05:18] [User Authenticator #2/INFO]: UUID of player marcobarba92 is 003500b2-7b20-49e9-8109-97fef262c60b
+[15:05:18] [Server thread/INFO]: marcobarba92[/62.11.2.23:9093] logged in with entity id 93 at ([LuckyBlock]-37.99417453247496, 102.24998384291683, -78.323740317339)
+[15:05:23] [Async Chat Thread - #0/INFO]: <BisUmTo> Ciao[m
+[15:05:26] [Async Chat Thread - #0/INFO]: <marcobarba92> wtf[m
+[15:06:17] [Server thread/INFO]: BisUmTo issued server command: /scoreboard objectives setdisplay sidebar
+[15:06:25] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 1
+[15:06:34] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 2
+[15:06:59] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 3
+[15:07:09] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 4
+[15:07:17] [Server thread/INFO]: marcobarba92 issued server command: /tp marcobarba92 BisUmTo
+[15:07:25] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 5
+[15:07:36] [Server thread/INFO]: marcobarba92 issued server command: /gamemode 0
+[15:07:36] [Server thread/INFO]: BisUmTo issued server command: /gamerule keepInventory true
+[15:07:41] [Server thread/INFO]: marcobarba92 was squashed by a falling anvil
+[15:07:49] [Server thread/INFO]: marcobarba92 fell out of the world
+[15:07:54] [Server thread/INFO]: marcobarba92 issued server command: /gamemode 0
+[15:07:56] [Server thread/INFO]: marcobarba92 issued server command: /tp marcobarba92 BisUmTo
+[15:07:57] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 6
+[15:07:57] [Server thread/INFO]: marcobarba92 fell from a high place
+[15:08:01] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 6
+[15:08:03] [Server thread/INFO]: marcobarba92 issued server command: /tp marcobarba92 BisUmTo
+[15:08:04] [Server thread/INFO]: marcobarba92 fell from a high place
+[15:08:11] [Server thread/INFO]: marcobarba92 issued server command: /gamemode 1
+[15:08:11] [Server thread/INFO]: marcobarba92 fell out of the world
+[15:08:17] [Server thread/INFO]: marcobarba92 issued server command: /tp marcobarba92 BisUmTo
+[15:08:26] [Server thread/INFO]: marcobarba92 issued server command: /gamemode 0
+[15:08:27] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 7
+[15:08:43] [Server thread/INFO]: marcobarba92 tried to swim in lava
+[15:08:51] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 128
+[15:08:51] [Server thread/INFO]: marcobarba92 fell out of the world
+[15:08:58] [Server thread/INFO]: marcobarba92 fell out of the world
+[15:08:58] [Server thread/INFO]: marcobarba92 issued server command: /gamemode 1
+[15:09:05] [Server thread/INFO]: marcobarba92 issued server command: /tp marcobarba92 BisUmTo
+[15:10:26] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 8
+[15:10:42] [Server thread/INFO]: marcobarba92 issued server command: /gamemode 0
+[15:11:26] [Server thread/INFO]: BisUmTo issued server command: /gamemode 0
+[15:11:33] [Server thread/INFO]: BisUmTo issued server command: /gamemode 1
+[15:11:48] [Server thread/INFO]: marcobarba92 fell out of the world
+[15:11:48] [Server thread/INFO]: marcobarba92 issued server command: /gamemode 1
+[15:12:07] [Server thread/INFO]: marcobarba92 issued server command: /kill
+[15:12:07] [Server thread/INFO]: marcobarba92 fell out of the world
+[15:12:21] [Server thread/INFO]: marcobarba92 issued server command: /tp 0 100 0
+[15:13:39] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:13:39] [Server thread/INFO]: Loaded 1 custom command functions
+[15:13:51] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 8
+[15:14:00] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:14:00] [Server thread/INFO]: Loaded 1 custom command functions
+[15:14:56] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:14:56] [Server thread/INFO]: Loaded 1 custom command functions
+[15:14:58] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 8
+[15:15:13] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:15:13] [Server thread/INFO]: Loaded 1 custom command functions
+[15:15:14] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 8
+[15:15:37] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:15:37] [Server thread/INFO]: Loaded 1 custom command functions
+[15:15:40] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 8
+[15:18:04] [Async Chat Thread - #1/INFO]: <marcobarba92> jumpscare[m
+[15:19:16] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:19:16] [Server thread/INFO]: Loaded 1 custom command functions
+[15:19:18] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 9
+[15:19:29] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 9
+[15:19:35] [Server thread/INFO]: BisUmTo issued server command: /tp @p marcobarba92
+[15:19:44] [Server thread/INFO]: marcobarba92 issued server command: /tp marcobarba92 BisUmTo
+[15:20:16] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 9
+[15:21:09] [Server thread/INFO]: BisUmTo issued server command: /playsound
+[15:21:37] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 9
+[15:22:42] [Server thread/INFO]: BisUmTo issued server command: /tp @p 1000 100 0
+[15:24:27] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:24:27] [Server thread/INFO]: Loaded 1 custom command functions
+[15:24:31] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 255
+[15:24:52] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:24:53] [Server thread/INFO]: Loaded 1 custom command functions
+[15:24:59] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 255
+[15:25:18] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:25:18] [Server thread/INFO]: Loaded 1 custom command functions
+[15:25:26] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 255
+[15:25:50] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 255
+[15:25:51] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:25:51] [Server thread/INFO]: Loaded 1 custom command functions
+[15:26:02] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:26:02] [Server thread/INFO]: Loaded 1 custom command functions
+[15:26:08] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 255
+[15:38:23] [Async Chat Thread - #2/INFO]: <BisUmTo> ci sei?[m
+[15:39:21] [Async Chat Thread - #2/INFO]: <marcobarba92> si eccomi, ti chiamo fra poco[m
+[15:47:29] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 10
+[15:47:33] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:47:33] [Server thread/INFO]: Loaded 1 custom command functions
+[15:49:16] [Server thread/INFO]: marcobarba92 lost connection: Disconnected
+[15:49:16] [Server thread/INFO]: marcobarba92 left the game
+[15:49:52] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:49:52] [Server thread/INFO]: Loaded 1 custom command functions
+[15:50:06] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:50:06] [Server thread/INFO]: Loaded 1 custom command functions
+[15:50:09] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 10
+[15:51:17] [Server thread/INFO]: BisUmTo issued server command: /summon minecraft:armor_stand ~ ~ ~ {Tags:["031lar"]}
+[15:51:22] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:51:22] [Server thread/INFO]: Loaded 1 custom command functions
+[15:51:25] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 10
+[15:51:45] [Server thread/INFO]: BisUmTo issued server command: /summon minecraft:armor_stand ~ ~ ~ {Tags:["031lar"]}
+[15:51:55] [Server thread/INFO]: BisUmTo issued server command: /minecraft:reload
+[15:51:55] [Server thread/INFO]: Loaded 1 custom command functions
+[15:51:58] [Server thread/INFO]: BisUmTo issued server command: /scoreboard players set @e[tag=031lar,c=1] 031lnb 10
+[15:59:50] [Server thread/INFO]: Stopping the server
+[15:59:50] [Server thread/INFO]: Stopping server
+[15:59:50] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.7;dd00bb1
+[15:59:50] [Server thread/INFO]: Saving players
+[15:59:50] [Server thread/INFO]: BisUmTo lost connection: Server closed
+[15:59:50] [Server thread/INFO]: BisUmTo left the game
+[15:59:51] [Server thread/INFO]: Saving worlds
+[15:59:51] [Server thread/INFO]: Saving chunks for level 'LuckyBlock'/overworld
+[15:59:51] [Server thread/INFO]: Saving chunks for level 'LuckyBlock_nether'/the_nether
+[15:59:51] [Server thread/INFO]: Saving chunks for level 'LuckyBlock_the_end'/the_end
