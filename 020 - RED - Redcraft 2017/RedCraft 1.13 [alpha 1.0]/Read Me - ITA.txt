@@ -1,0 +1,16 @@
+            •• RedCraft 2017 - 1.13 ••
+			  • Powered by BisUmTo •
+          • http://youtube.com/BisUmTo •
+
+      • Come installare questa Function •
+Per far funzionare il seguente data_pack, salvarlo in in "saves/WORLD/packs/". 
+Entrare in game e fare i seguenti comandi:
+/reload
+/function redcraft:install
+
+Nella console del gioco apparirà un messaggio al secondo per ogni player.
+Per rimmuovere questo spam fare il comando:
+/gamerule logAdminCommands false
+
+			 • Cartelli utili •
+Nessun cartello per questa versione.
