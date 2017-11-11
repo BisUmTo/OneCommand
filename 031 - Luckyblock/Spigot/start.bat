@@ -1,0 +1,1 @@
+java -Xmx4G -Xms4G -jar minecraft_server.jar nogui

@@ -1,0 +1,15 @@
+scoreboard objectives add HS2:tmr dummy Hide And Seek
+scoreboard players set #HS2:c10 HS2:tmr 10
+scoreboard players set #HS2:c20 HS2:tmr 20
+scoreboard players set #HS2:c1200 HS2:tmr 1200
+scoreboard players set HS2:players HS2:tmr 0
+scoreboard teams add HS2Hiders
+scoreboard teams add HS2Seekers
+scoreboard teams option HS2Hiders color green
+scoreboard teams option HS2Seekers color dark_red
+scoreboard teams option HS2Hiders nametagVisibility hideForOtherTeams
+scoreboard teams option HS2Hiders friendlyfire false
+scoreboard objectives add HS2:takedmg stat.damageTaken
+scoreboard objectives add HS2:dealtdmg stat.damageDealt
+scoreboard objectives add HS2:punteggio dummy Hide And Seek - Punteggio
+scoreboard objectives add HS2:fase dummy Hide And Seek - Fase
