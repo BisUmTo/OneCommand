@@ -1,0 +1,20 @@
+scoreboard objectives add SHShth stat.damageTaken
+scoreboard objectives add SHSdmg stat.damageDealt
+scoreboard objectives add SHSp1t dummy
+scoreboard objectives add SHSp1s dummy
+scoreboard objectives add SHSp9s dummy
+scoreboard objectives add SHSp1m dummy
+scoreboard objectives add SHSstr dummy
+scoreboard objectives add SHSnon dummy
+scoreboard teams add SHScer
+scoreboard teams add SHSnas
+scoreboard teams option SHScer color dark_red
+scoreboard teams option SHSnas color green
+scoreboard teams option SHSnas nametagVisibility hideForOtherTeams
+scoreboard teams option SHSnas friendlyfire false
+scoreboard teams option SHScer friendlyfire false
+scoreboard teams option SHSnas collisionRule never
+scoreboard teams option SHScer collisionRule never
+scoreboard objectives add SHSset trigger
+scoreboard objectives add SHSstart trigger
+scoreboard objectives add SHSreset trigger

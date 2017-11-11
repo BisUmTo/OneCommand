@@ -1,0 +1,79 @@
+cnt
+scn = cnt
+scn %= 1200
+scn /= 20
+min = cnt
+min /= 1200
+dascn = scn
+dascn /= 10
+uscn = scn
+uscn %= 10
+
+#############################
+
+0 -> gioco in pausa
+
+1 -> testfor player
+	SE PLAYER <= 2
+		messaggio in chat "bisogna essere almeno in 3 per giocare"
+		goto 0
+	tutti hider
+	1 seeker fra "HS2:played = 0"
+	reset tutti "HS2:played"
+	set "HS2:played = 1" al seeker
+	set score 900
+
+2 -> sottotitolo secondi "Preparazione - Tempo rimasto: *:**"
+	decremento score 1
+	
+	
+3 -> titoli secondi 3-2-1 dalla score a 60
+	smetti di dare effetti negativi al seeker
+	
+	inizio gioco
+	titolo VIA
+	teletrasporto seeker
+	set score 3600
+	
+4 -> in gioco
+	sottotitolo secondi "In Gioco - Tempo rimasto: *:**"
+	
+	QUANDO UN HIDER HA SCORE TAKEDMG 1 E UN SEEKER A DISTANZA DI 5 BLOCCHI HA SCORE DEALTDMG 1
+		hider leave
+		titolo giocatore "Sei stato trovato!"
+		fuoco d'artificio ~ ~ ~ colori rossi
+		messaggio in chat "* E' stato trovato!"
+		seeker score dealtdmg ... punteggio +1
+		join seeker
+	
+	SE TEMPO = 0 
+		titolo hider "avete vinto"
+		titolo seeker "avete perso"
+		hider punteggio +1
+		tutti hider
+		goto 0
+
+	testfor hider
+		
+	CONTEGGIO HIDER <= 1
+		titolo hider "hai vinto"
+		messaggio in chat "* ha vinto!"
+		hider Punteggio +1
+		tutti hider
+		set score 0
+		goto 0
+		
+COMANDI:
+Mostra punteggio
+Inizia
+Fine
+Resetta punteggio
+Imposta spawn
+
+Distruggi comando
+Crediti comando + Libro
+Spegni/accendi macchina
+
+
+/summon ArmorStand ~ ~ ~ {Tags:["HS2armor"]}
+/scoreboard players set @e[tag=HS2armor] HS2:fase 1
