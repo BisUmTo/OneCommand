@@ -40,6 +40,10 @@ execute at @e[tag=!033cr0,type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecra
 execute at @e[tag=!033cr0,type=minecraft:item,nbt={OnGround:1b,Item:{id:"minecraft:green_banner",Count:1b}}] as @e[type=minecraft:item,distance=..1,limit=1,nbt={OnGround:1b,Item:{id:"minecraft:sign",Count:1b}}] store success entity @s Age short 6000 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:sign",Count:1b,tag:{ench:[{id:90,lvl:0}],BlockEntityTag:{Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players add @s 033lvl 1\"}}",Text2:"[{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"scoreboard players operation @p 033trg = @s 033lvl\"}},{\"text\":\"~\",\"obfuscated\":true,\"color\":\"white\"},{\"text\":\" Start \",\"color\":\"dark_green\",\"bold\":true},{\"text\":\"~\",\"obfuscated\":true,\"color\":\"white\"}]",Text3:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"playsound minecraft:entity.player.levelup player @s\"}}",Text4:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"title @a title [\\\"\\\",{\\\"text\\\":\\\"Level \\\",\\\"color\\\":\\\"white\\\"},{\\\"score\\\":{\\\"name\\\":\\\"@s\\\",\\\"objective\\\":\\\"033lvl\\\"},\\\"color\\\":\\\"white\\\"}]\"}}"},display:{Name:"§f§k§l~§2§o§l Start §f§k§l~§r",Lore:["§7Place this sign to add a§r","§7Start button.§r"]}}},Motion:[0.0d,0.3d,0.0d],Tags:["033cr0","033cr5"],PickupDelay:18}
 execute at @e[tag=033cr5] as @e[type=minecraft:item,limit=1,nbt={OnGround:1b,Item:{id:"minecraft:green_banner",Count:1b}}] store success entity @s Age short 6000 run tag @e[tag=033cr5] remove 033cr5
 
+# Fire
+execute as @a store result score @s 033frt run data get entity @s Fire 1
+kill @a[scores={033frt=1..}]
+
 # Trigger and Death
 scoreboard players enable @a 033trg
 execute as @a[scores={033trg=1..}] run scoreboard players operation @s 033lvl = @s 033trg
@@ -53,6 +57,7 @@ execute as @e[tag=033lvl,scores={033trg=0}] run tp @a[scores={033trg=1..},limit=
 execute as @a[scores={033trg=1..},limit=1] at @s run spawnpoint @s
 execute as @e[tag=033lvl,scores={033trg=0}] run effect give @a[scores={033hlt=..19},limit=1] minecraft:instant_health 1 20 true
 scoreboard players set @a[scores={033trg=1..},limit=1] 033trg 0
+scoreboard players remove @a[scores={033frt=1..}] 033dts 1
 
 # Waypoint Particles
 execute at @e[tag=033lvl] run particle minecraft:block lime_concrete ~ ~ ~ 0 0 0 0.1 2
