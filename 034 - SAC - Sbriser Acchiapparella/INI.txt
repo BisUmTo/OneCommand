@@ -1,0 +1,18 @@
+scoreboard objectives add SAChth stat.damageTaken
+scoreboard objectives add SACdmg stat.damageDealt
+scoreboard objectives add SACp1t dummy
+scoreboard objectives add SACp1s dummy
+scoreboard objectives add SACp9s dummy
+scoreboard objectives add SACp1m dummy
+scoreboard objectives add SACstr dummy
+scoreboard objectives add SACpnt dummy Punteggio:
+scoreboard teams add SACcer
+scoreboard teams add SACnas
+scoreboard teams option SACcer color dark_red
+scoreboard teams option SACnas color green
+scoreboard teams option SACnas friendlyfire false
+scoreboard teams option SACnas collisionRule never
+scoreboard teams option SACcer collisionRule never
+scoreboard objectives add SACset trigger
+scoreboard objectives add SACstart trigger
+scoreboard objectives add SACreset trigger

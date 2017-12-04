@@ -43,7 +43,7 @@ effect @a[team=SHSnas] minecraft:jump_boost 10 255 true
 
 # /reset
 execute @a[score_SHSreset_min=1] ~ ~ ~ scoreboard teams leave @a
-execute @a[score_SHSreset_min=1] ~ ~ ~ scoreboard players tag @a remove SHSigm
+execute @a[score_SHSreset_min=1] ~ ~ ~ scoreboard players tag @a remove SHSrtg
 execute @a[score_SHSreset_min=1] ~ ~ ~ scoreboard players tag @a remove SHSigm
 execute @a[score_SHSreset_min=1] ~ ~ ~ effect @a clear
 scoreboard players set @a SHSreset 0
@@ -69,8 +69,8 @@ execute @a[score_SHSdmg_min=1,tag=SHSigm,team=SHScer] ~ ~ ~ execute @a[score_SHS
 execute @a[score_SHSdmg_min=1,tag=SHSigm,team=SHScer] ~ ~ ~ scoreboard teams leave @a[score_SHShth_min=1,tag=SHSigm,r=5]
 execute @a[score_SHSdmg_min=1,tag=SHSigm,team=SHScer] ~ ~ ~ scoreboard teams join SHScer @a[score_SHShth_min=1,tag=SHSigm,r=5]
 
-scoreboard players reset @a HHSdmg
-scoreboard players reset @a HHShlt
+scoreboard players reset @a SHSdmg
+scoreboard players reset @a SHShlt
 
 
 # Creazione Team
