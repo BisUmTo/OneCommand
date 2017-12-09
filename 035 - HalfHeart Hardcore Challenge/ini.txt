@@ -1,0 +1,17 @@
+scoreboard objectives add 035dth stat.deaths
+gamerule naturalRegeneration false
+gamerule spawnRadius 0
+difficulty 3
+defaultgamemode 0
+gamemode 0 @a
+clear @a
+time set 0
+effect @a saturation 1 100 true
+spreadplayers ~ ~ 10 1000 false @a
+tp @a ~ ~2 ~ 
+setworldspawn ~ ~ ~
+scoreboard players tag @a remove 035igm
+title @a title
+title @a subtitle {"text":"HalfHeart Hardcore Challenge","color":"dark_red"}
+execute @a ~ ~ ~ playsound minecraft:ui.toast.challenge_complete master @a
+tellraw @a ["",{"text":"\n\n'HalfHeart Hardcore Challenge' [1.12.X] ","color":"gold","bold":true},{"text":"by ","color":"none","bold":false},{"text":"BisUmTo","color":"red","bold":true},{"text":"\n https://youtube.com/BisUmTo\n\n","color":"gold","clickEvent":{"action":"open_url","value":"https:www.youtube.com/c/BisUmTo"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"click to open link ","color":"dark_blue"}]}},"bold":false},{"text":"Credit BisUmTo if you are using this creation.\nDon't re-upload this command: provide my video link!!\n\n","color":"red"}]
