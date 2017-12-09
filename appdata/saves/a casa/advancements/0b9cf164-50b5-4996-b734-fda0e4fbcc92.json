@@ -1,7 +1,8 @@
 {
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "desert": "2017-09-04 09:28:01 +0200"
+      "taiga": "2017-12-09 15:51:25 +0100",
+      "taiga_hills": "2017-12-09 15:50:51 +0100"
     },
     "done": false
   }

@@ -8,7 +8,7 @@ summon minecraft:falling_block ~ ~1 ~ {id:"minecraft:falling_block",Block:"minec
 	{id:"minecraft:commandblock_minecart",Command:"defaultgamemode 0"},
 	{id:"minecraft:commandblock_minecart",Command:"gamemode 0 @a"},
 	{id:"minecraft:commandblock_minecart",Command:"clear @a"},
-	{id:"minecraft:commandblock_minecart",Command:"effect @a saturation 1 100 true"},
+	{id:"minecraft:commandblock_minecart",Command:"effect @a saturation 1 5 true"},
 	{id:"minecraft:commandblock_minecart",Command:"time set 0"},
 	{id:"minecraft:commandblock_minecart",Command:"spreadplayers ~ ~ 10 1000 false @a"},
 	{id:"minecraft:commandblock_minecart",Command:"tp @a ~ ~3 ~ "},
