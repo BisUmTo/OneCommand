@@ -1,0 +1,42 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:enchanted_book",
+					"weight": 60,
+                    "functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"§r§7Smelting I§r\"]},StoredEnchantments:[{id:36,lvl:1}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:enchanted_book",
+					"weight": 30,
+                    "functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"§r§7Smelting II§r\"]},StoredEnchantments:[{id:36,lvl:2}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:enchanted_book",
+					"weight": 10,
+                    "functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{Lore:[\"§r§7Smelting III§r\"]},StoredEnchantments:[{id:36,lvl:3}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
