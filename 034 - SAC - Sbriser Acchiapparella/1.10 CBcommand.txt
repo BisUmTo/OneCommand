@@ -22,9 +22,9 @@ execute @a[score_SACstart_min=1] ~ ~ ~ scoreboard objectives setdisplay sidebar
 execute @a[score_SACstart_min=1] ~ ~ ~ scoreboard players reset * SACpnt
 scoreboard players set @a SACstart 0
 execute @a[score_SACset_min=1] ~ ~ ~ kill @e[tag=SACarm]
-execute @a[score_SACset_min=1] ~ ~ ~ summon armor_stand ~ ~.5 ~ {NoGravity:1,Invisible:1,Tags:["SACarm"]}
+execute @a[score_SACset_min=1] ~ ~ ~ summon ArmorStand ~ ~.5 ~ {NoGravity:1,Invisible:1,Tags:["SACarm"]}
 scoreboard players set @a SACset 0
-execute @a[score_SACdmg_min=1,tag=SACigm,team=SACcer] ~ ~ ~ execute @a[score_SAChth_min=1,tag=SACigm,team=SACnas,r=5] ~ ~ ~ summon minecraft:fireworks_rocket ~ ~ ~ {LifeTime:10,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Trail:1,Colors:[16720384],FadeColors:[16741412]},{Type:0,Flicker:0,Trail:0,Colors:[16738363],FadeColors:[16772211]},{Type:2,Flicker:0,Trail:0,Colors:[16757117],FadeColors:[16383915]},{Type:4,Flicker:0,Trail:0,Colors:[16777215],FadeColors:[16772817]}]}}}}
+execute @a[score_SACdmg_min=1,tag=SACigm,team=SACcer] ~ ~ ~ execute @a[score_SAChth_min=1,tag=SACigm,team=SACnas,r=5] ~ ~ ~ summon minecraft:FireworksRocketEntity ~ ~ ~ {LifeTime:10,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Trail:1,Colors:[16720384],FadeColors:[16741412]},{Type:0,Flicker:0,Trail:0,Colors:[16738363],FadeColors:[16772211]},{Type:2,Flicker:0,Trail:0,Colors:[16757117],FadeColors:[16383915]},{Type:4,Flicker:0,Trail:0,Colors:[16777215],FadeColors:[16772817]}]}}}}
 execute @a[score_SACdmg_min=1,tag=SACigm,team=SACcer] ~ ~ ~ execute @a[score_SAChth_min=1,tag=SACigm,team=SACnas,r=5] ~ ~ ~ effect @a[r=5] minecraft:resistance 3 255 true
 execute @a[score_SACdmg_min=1,tag=SACigm,team=SACcer] ~ ~ ~ execute @a[score_SAChth_min=1,tag=SACigm,r=5] ~ ~ ~ scoreboard players tag @a[score_SACdmg_min=1,tag=SACigm,team=SACcer,r=5] add SACtrv
 execute @a[score_SACdmg_min=1,tag=SACigm,team=SACcer] ~ ~ ~ scoreboard teams join SACcer @a[score_SAChth_min=1,tag=SACigm,r=5]
@@ -70,7 +70,7 @@ scoreboard players add @a SACp1m 0
 scoreboard players add @a SACpnt 0
 title @a[score_SACp1m_min=0,tag=SACigm] title {"text":""}
 title @a[score_SACp1m_min=0,tag=SACigm] times 0 15 10
-title @a[score_SACp1m_min=0,tag=SACigm] actionbar ["",{"text":" In Gioco: "},{"score":{"name":"@p","objective":"SACp1m"},"bold":true},{"text":":","bold":true},{"score":{"name":"@p","objective":"SACp9s"},"bold":true},{"score":{"name":"@p","objective":"SACp1s"},"bold":true},{"text":" ","bold":true}]
+title @a[score_SACp1m_min=0,tag=SACigm] subtitle ["",{"text":"                                                                                               In Gioco: "},{"score":{"name":"@p","objective":"SACp1m"},"bold":true},{"text":":","bold":true},{"score":{"name":"@p","objective":"SACp9s"},"bold":true},{"score":{"name":"@p","objective":"SACp1s"},"bold":true},{"text":" ","bold":true}]
 scoreboard players add @a[tag=SACigm,team=SACnas] SACpnt 1
 scoreboard players set #SACtot SACpnt 180
 title @a[score_SACp1m=,tag=SACigm] clear
