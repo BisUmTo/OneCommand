@@ -39,11 +39,13 @@ execute @a[score_SMRreset_min=1] ~ ~ ~ scoreboard players tag @a remove SMRing
 execute @a[score_SMRreset_min=1] ~ ~ ~ scoreboard players reset @a SMRstr
 execute @a[score_SMRreset_min=1] ~ ~ ~ effect @a clear
 execute @a[score_SMRreset_min=1] ~ ~ ~ clear @a
+execute @a[score_SMRreset_min=1] ~ ~ ~ kill @e[tag=SMRbow]
 scoreboard players set @a SMRreset 0
 execute @a[score_SMRstart_min=1] ~ ~ ~ scoreboard players tag @a add SMRrgm
 execute @a[score_SMRstart_min=1] ~ ~ ~ gamemode 2 @a
 execute @a[score_SMRstart_min=1] ~ ~ ~ clear @a
 execute @a[score_SMRstart_min=1] ~ ~ ~ tp @a @e[tag=SMRarm]
+execute @a[score_SMRstart_min=1] ~ ~ ~ kill @e[tag=SMRbow]
 execute @a[score_SMRstart_min=1] ~ ~ ~ scoreboard players tag @p add SMRsgm
 scoreboard players set @a SMRstart 0
 execute @a[score_SMRset_min=1] ~ ~ ~ kill @e[tag=SMRarm]
@@ -76,10 +78,11 @@ execute @a[score_SMRdts_min=1,team=SMRass] ~ ~ ~ playsound minecraft:entity.play
 execute @a[score_SMRdts_min=1,team=SMRass] ~ ~ ~ scoreboard teams leave @a
 
 # POL UCCISO
-execute @a[score_SMRdts_min=1,team=SMRpol] ~ ~ ~ summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:bow",Count:1,tag:{ench:[{id:48,lvl:255},{id:51,lvl:1}],HideFlags:5,Unbreakable:1,display:{Name:"Coltello"}}},CustomName:"PRENDIMI!",CustomNameVisible:1}
+execute @a[score_SMRdts_min=1,team=SMRpol] ~ ~ ~ summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:bow",Count:1,tag:{ench:[{id:48,lvl:255},{id:51,lvl:1}],HideFlags:5,Unbreakable:1,display:{Name:"Pistola"}}},CustomName:"PRENDIMI!",CustomNameVisible:1,Tags:["SMRbow"]}
 execute @a[score_SMRdts_min=1,team=SMRpol] ~ ~ ~ effect @a[r=5] minecraft:resistance 1 255 true
 execute @a[score_SMRdts_min=1,team=SMRpol] ~ ~ ~ summon minecraft:fireworks_rocket ~ ~ ~ {LifeTime:10,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Trail:1,Colors:[16720384],FadeColors:[16741412]},{Type:0,Flicker:0,Trail:0,Colors:[16738363],FadeColors:[16772211]},{Type:2,Flicker:0,Trail:0,Colors:[16757117],FadeColors:[16383915]},{Type:4,Flicker:0,Trail:0,Colors:[16777215],FadeColors:[16772817]}]}}}}
 execute @a[score_SMRdts_min=1,team=SMRpol] ~ ~ ~ playsound minecraft:entity.endermen.death ambient @s ~ ~ ~ 1 0.4
+scoreboard players tag @a[score_SMRdts_min=1,team=SMRpol] remove SMRing
 scoreboard teams leave @a[score_SMRdts_min=1,team=SMRpol]
 
 # POL UCCISO DA ASS
@@ -126,8 +129,8 @@ scoreboard players reset @a[score_SMRstr_min=240] SMRstr
 
 # VITTORIA
 scoreboard players set @a SMRnon 0
-execute @a[team=SMRinn] ~ ~ ~ scoreboard players add @a SMRnon 1
-execute @a[team=SMRpol] ~ ~ ~ scoreboard players add @a SMRnon 1
+execute @a[team=SMRinn,tag=SMRing] ~ ~ ~ scoreboard players add @a SMRnon 1
+execute @a[team=SMRpol,tag=SMRing] ~ ~ ~ scoreboard players add @a SMRnon 1
 title @a[score_SMRnon=0,team=SMRass,tag=SMRing] title {"text":"HAI VINTO!","color":"dark_green","bold":true}
 title @a[score_SMRnon=0,team=SMRass,tag=SMRing] subtitle {"text":"Hai ucciso tutti!","color":"dark_green"}
 execute @a[score_SMRnon=0,team=SMRass,tag=SMRing] ~ ~ ~ title @a[team=!SMRass] title {"text":"HAI PERSO!","color":"dark_red","bold":true}
