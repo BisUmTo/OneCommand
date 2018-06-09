@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2018-03-30 12:05:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "ice_flats": "2018-03-30 12:02:37 +0200",
+      "forest": "2018-03-30 12:01:58 +0200",
+      "swampland": "2018-03-30 12:10:02 +0200",
+      "beaches": "2018-03-30 12:03:45 +0200",
+      "plains": "2018-03-30 12:00:07 +0200",
+      "taiga_cold": "2018-03-30 12:07:03 +0200",
+      "river": "2018-03-30 12:02:45 +0200",
+      "jungle": "2018-03-30 12:01:55 +0200",
+      "desert": "2018-03-30 12:10:25 +0200"
+    },
+    "done": false
+  }
+}

@@ -1,0 +1,10 @@
+ {
+	"criteria": {
+        "run": {
+            "trigger": "minecraft:slept_in_bed"
+        }
+    },
+	"rewards": {
+		"function": "red:multiplayer_bed/trigger"
+	}
+}

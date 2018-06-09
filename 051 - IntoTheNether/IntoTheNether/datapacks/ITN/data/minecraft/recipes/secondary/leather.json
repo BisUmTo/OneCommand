@@ -1,0 +1,9 @@
+{
+    "type": "smelting",
+    "ingredient": {
+      "item": "minecraft:rotten_flash"
+    },
+    "result": "minecraft:leather",
+    "experience": 0.1,
+    "cookingtime": 200
+  }

@@ -1,0 +1,4 @@
+function red:multiplayer_bed/load
+function red:gamemode_changer/load
+function red:grave/load
+tellraw @a ["",{"text":"\n\n\n\n'","color":"gold","bold":true},{"text":"Red","bold":true,"color":"dark_red"},{"text":"Craft ","bold":true,"color":"red"},{"text":"2","bold":true,"color":"dark_red"},{"text":"' [18w03b] ","color":"gold","bold":true},{"text":"by ","color":"none","bold":false},{"text":"BisUmTo","color":"red","bold":true},{"text":"\n https://youtube.com/BisUmTo\n\n","color":"gold","clickEvent":{"action":"open_url","value":"https://www.youtube.com/c/BisUmTo"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"click to open link ⤴","color":"dark_blue"}]}},"bold":false},{"text":"Credit BisUmTo if you are using this creation.\nDon't re-upload this command: provide my video link!!\n\n","color":"red"}]

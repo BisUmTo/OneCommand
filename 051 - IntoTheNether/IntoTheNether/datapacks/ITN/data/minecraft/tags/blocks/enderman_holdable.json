@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:dirt",
+    "minecraft:soul_sand",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:netherrack"
+  ]
+}
