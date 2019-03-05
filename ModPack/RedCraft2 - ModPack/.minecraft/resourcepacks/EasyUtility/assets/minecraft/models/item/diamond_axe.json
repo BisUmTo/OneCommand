@@ -1,0 +1,9 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_axe"
+	},
+	"overrides": [
+		{ "predicate": { "damaged": 1, "damage": 0.9935 }, "model": "item/sonorotto" }
+	]
+}

@@ -1,0 +1,42 @@
+{
+    "+tweakers": [
+        "org.dimdev.riftloader.launch.RiftLoaderClientTweaker"
+    ],
+    "formatVersion": 1,
+    "+libraries": [
+        {
+            "name": "com.github.Chocohead:Rift:jitpack-d6893ec777-1",
+            "url": "https://www.jitpack.io/"
+        },
+        {
+            "name": "org.dimdev:mixin:0.7.11-SNAPSHOT",
+            "url": "https://www.dimdev.org/maven/"
+        },
+        {
+            "name": "org.ow2.asm:asm:6.2",
+            "url": "http://repo1.maven.org/maven2/"
+        },
+        {
+            "name": "org.ow2.asm:asm-commons:6.2",
+            "url": "http://repo1.maven.org/maven2/"
+        },
+        {
+            "name": "org.ow2.asm:asm-tree:6.2",
+            "url": "http://repo1.maven.org/maven2/"
+        },
+        {
+            "name": "net.minecraft:launchwrapper:1.12"
+        }
+    ],
+    "mainClass": "net.minecraft.launchwrapper.Launch",
+    "name": "Rift",
+    "releaseTime": "2018-11-29T09:45:00+00:00",
+    "requires": [
+        {
+            "equals": "1.13.2",
+            "uid": "net.minecraft"
+        }
+    ],
+    "uid": "org.dimdev.rift",
+    "version": "1.0.4-jitpack-d6893ec777-1"
+}
