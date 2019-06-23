@@ -24,10 +24,6 @@ worldborder center 0 0
 # WorldBorder Freeze
 summon armor_stand 0 100 0 {Invisible:1,Marker:1,NoGravity:1,Tags:["voxwbr"]}
 
-# Scripting
-scoreboard teams add voxred
-scoreboard teams join voxred BisUmTo Suriv_YT
-
 # Timer
 scoreboard objectives add voxtmr dummy
 stats entity @e[tag=voxctr] set QueryResult @s voxtmr
