@@ -1,0 +1,23 @@
+{
+    "parent": "atlanticuhc:root",
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_chestplate"
+      },
+      "title": {
+        "text": "IRONMAN!"
+      },
+      "description": {
+        "text": "Sii l'ultimo giocatore a prendere danno"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "criteria": {
+      "example": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,26 @@
+{
+    "parent": "atlanticuhc:root",
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_sword"
+      },
+      "title": {
+        "text": "Oh noooo! Il danno!"
+      },
+      "description": {
+        "text": "Prendi danno"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "killer": {
+        "trigger": "minecraft:entity_hurt_player"
+      }
+    },
+    "requirements": [
+        ["killer"]
+    ]
+}
