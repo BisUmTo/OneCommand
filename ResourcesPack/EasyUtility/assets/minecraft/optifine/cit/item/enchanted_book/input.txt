@@ -20,6 +20,7 @@ depth_strider	3
 loyalty	3
 impaling	5
 frost_walker	2
+quick_charge	3
 fire_aspect	2
 fire_aspect	1
 fire_protection	4
@@ -36,13 +37,17 @@ sweeping	2
 smite	5
 bane_of_arthropods	5
 aqua_affinity	1
+piercing	4
 riptide	3
 fortune	2
 looting	2
+multishot	1
 efficiency	3
+quick_charge	2
 protection	3
 sharpness	4
 impaling	4
+piercing	3
 feather_falling	2
 power	4
 smite	4
@@ -58,7 +63,9 @@ unbreaking	1
 efficiency	2
 sharpness	3
 depth_strider	2
+piercing	2
 riptide	2
+quick_charge	1
 punch	1
 power	3
 smite	3
@@ -96,4 +103,5 @@ blast_protection	1
 projectile_protection	1
 smite	1
 bane_of_arthropods	1
+piercing	1
 impaling	1
