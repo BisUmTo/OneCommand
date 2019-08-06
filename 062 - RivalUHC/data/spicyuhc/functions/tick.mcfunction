@@ -55,7 +55,7 @@ execute if score start time matches 1.. if score episodiotime time matches 0 if 
 execute if score start time matches 1.. if score episodiotime time matches 0 if score episodio time matches 1.. run function spicyuhc:config
 
 # RIVELA SQUADRE
-execute if score start time matches 1.. if score ingame time = RivelaSquadre config run playsound minecraft:ambient.underwater.loop.additions.ultra_rare master @a ~ ~ ~ 1 2 1
+execute if score start time matches 1.. if score ingame time = RivelaSquadre config run playsound minecraft:entity.wither.break_block master @a ~ ~ ~ 2 0.1 1
 execute if score start time matches 1.. if score ingame time = RivelaSquadre config run team join t1 @a[tag=t1]
 execute if score start time matches 1.. if score ingame time = RivelaSquadre config run team join t2 @a[tag=t2]
 

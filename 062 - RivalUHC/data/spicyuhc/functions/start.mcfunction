@@ -11,6 +11,7 @@ clear @a
 advancement revoke @a everything
 
 time set 0
+difficulty easy
 
 gamemode survival @a
 
@@ -26,5 +27,6 @@ function spicyuhc:crea_squadre
 
 # bossbar set spicyuhc:timebar players @a[tag=t]
 
-title @a[tag=t1] title {"text":"SpicyUHC","color":"red"}
-title @a[tag=t2] title {"text":"SpicyUHC","color":"blue"}
+title @a times 5 60 5
+title @a[tag=t1] title {"text":"RivalUHC","color":"red"}
+title @a[tag=t2] title {"text":"RivalUHC","color":"blue"}
