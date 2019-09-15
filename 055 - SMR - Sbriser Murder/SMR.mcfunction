@@ -95,7 +95,7 @@ scoreboard players reset @a SMRdts
 scoreboard players reset @a SMRkll
 
 # PISTOLA
-scoreboard players tag @a add SMRpol {Inventory:[{id:"minecraft:bow"}]}
+scoreboard players tag @a[team=!SMRass] add SMRpol {Inventory:[{id:"minecraft:bow"}]}
 execute @a[tag=SMRing,team=SMRpol] ~ ~ ~ scoreboard teams join SMRinn @s[tag=!SMRpol]
 
 # START

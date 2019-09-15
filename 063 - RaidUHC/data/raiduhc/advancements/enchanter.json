@@ -1,0 +1,27 @@
+{
+    "parent": "raiduhc:root",
+    "display": {
+      "icon": {
+        "item": "minecraft:enchanted_book"
+      },
+      "title": {
+        "text": "Sono rimasto incantato"
+      },
+      "description": {
+        "text": "Incanta un oggetto"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "enchanted_item": {
+        "trigger": "minecraft:enchanted_item",
+        "conditions": {}
+      }
+    },
+    "requirements": [
+      ["enchanted_item"]
+    ]
+  }
