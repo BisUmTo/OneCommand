@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "###"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "#": {"item":"netherrack"}
+  },
+  "result": {
+    "item": "minecraft:brewing_stand"
+  }
+}

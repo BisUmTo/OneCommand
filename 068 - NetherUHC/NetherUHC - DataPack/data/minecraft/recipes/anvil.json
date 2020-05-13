@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    " i ",
+    "iii"
+  ],
+  "key": {
+    "I": [{
+      "item": "minecraft:quartz_block"
+    },{
+      "item": "minecraft:smooth_quartz"
+    },{
+      "item": "minecraft:chiseled_quartz_block"
+    },{
+      "item": "minecraft:quartz_pillar"
+    }],
+    "i": {"item":"quartz"}
+  },
+  "result": {
+    "item": "minecraft:anvil"
+  }
+}

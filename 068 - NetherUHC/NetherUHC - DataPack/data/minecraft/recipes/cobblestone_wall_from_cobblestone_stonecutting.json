@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item":"netherrack"},
+  "result": "minecraft:cobblestone_wall",
+  "count": 1
+}

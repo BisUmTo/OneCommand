@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {"item":"quartz"}
+  },
+  "result": {
+    "item": "minecraft:iron_boots"
+  }
+}

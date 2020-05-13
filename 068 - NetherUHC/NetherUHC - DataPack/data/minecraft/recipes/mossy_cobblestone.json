@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item":"netherrack"},
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "minecraft:mossy_cobblestone"
+  }
+}

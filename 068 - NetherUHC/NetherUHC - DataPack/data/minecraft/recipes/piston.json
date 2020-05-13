@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "#X#",
+    "#R#"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "#": {
+      "item": "minecraft:netherrack"
+    },
+    "T": {
+      "tag": "minecraft:planks"
+    },
+    "X": {"item":"quartz"}
+  },
+  "result": {
+    "item": "minecraft:piston"
+  }
+}

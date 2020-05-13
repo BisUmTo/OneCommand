@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": [
+        {
+            "item": "minecraft:weeping_vines"
+        },
+        {
+            "item": "minecraft:twisting_vines"
+        }
+    ]
+    },
+    "result": {
+      "item": "minecraft:paper",
+      "count": 3
+    }
+  }

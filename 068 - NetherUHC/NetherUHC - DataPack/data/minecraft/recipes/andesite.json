@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:diorite"
+    },
+    {"item":"netherrack"}
+  ],
+  "result": {
+    "item": "minecraft:andesite",
+    "count": 2
+  }
+}

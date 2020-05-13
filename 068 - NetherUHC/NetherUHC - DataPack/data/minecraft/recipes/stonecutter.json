@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "###"
+  ],
+  "key": {
+    "I": {"item":"quartz"},
+    "#": {
+      "item": "minecraft:stone"
+    }
+  },
+  "result": {
+    "item": "minecraft:stonecutter"
+  }
+}

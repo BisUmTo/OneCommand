@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {"item":"quartz"}
+  },
+  "result": {
+    "item": "minecraft:iron_door",
+    "count": 3
+  }
+}

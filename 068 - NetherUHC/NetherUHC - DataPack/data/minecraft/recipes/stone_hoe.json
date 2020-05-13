@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {"item":"netherrack"}
+  },
+  "result": {
+    "item": "minecraft:stone_hoe"
+  }
+}

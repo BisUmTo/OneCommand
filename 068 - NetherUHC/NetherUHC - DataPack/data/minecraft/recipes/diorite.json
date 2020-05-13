@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CQ",
+    "QC"
+  ],
+  "key": {
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "C": {"item":"netherrack"}
+  },
+  "result": {
+    "item": "minecraft:diorite",
+    "count": 2
+  }
+}

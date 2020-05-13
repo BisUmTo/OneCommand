@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {"item":"quartz"}
+  },
+  "result": {
+    "item": "minecraft:iron_chestplate"
+  }
+}
